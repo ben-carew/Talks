@@ -25,55 +25,44 @@
     <div class="reveal">
         <div class="slides">
 
-            <section data-auto-animate data-background-image="media/title_bg.png">
-          <div class="r-vstack">
-          <div style="background-color: #000000; opacity: 1.0;
-                                        border-radius: 30px; padding: 1px">
-                    <h3 style="color:white;">The neutrino fog for dark matter-electron scattering experiments</h3>
+            <section data-auto-animate data-background-image="figures/NuFloor_Wide.png">
+                <div style="background-color: #F0F1EB; opacity: 0.95;
+                                    border-radius: 30px; padding: 15px">
+                    <img class="plain" style="height: 80px; margin: 20px 20px 20px 20px" src="media/UQ_logo.png" data-lazy-loaded="">
+                    <img class="plain" style="height: 80px; margin: 20px 20px 20px 20px" src="media/USyd_logo.png" data-lazy-loaded="">
+                    `<h2 style="color:black;">Light WIMP Detection and the Neutrino Fog</h2>
+                    <p style="color:black;">Ben Carew</p>
+                    <p style="color:grey;">ben.carew@uq.edu.au</p>
                 </div>
-                <div style="padding:140px">
-                </div>
-
-                    <p style="color:white;">Ben Carew</p>
-                    <p style="color:white;">Supervisor: Dr Ciaran O'Hare</p>
-          </div>
+                <div>
             </section>
 
-        <section data-background-image="media/goldie.jpg">
-          <div style="background-color: #FFFFFF; opacity: 0.8;
-                                        border-radius: 30px; padding: 1px">
-          <h3 style="color:black">What's the deal with Queensland?</h3>
-          </div>
-          <div class="r-stack">
-<img class="fragment fade-in-then-out" src="media/stateoforigin.png" style="border-radius:20px">
-<img class="fragment fade-in-then-out" src="media/SOOstats.png" style="border-radius:20px">
-<!-- <img class="fragment fade-in-then-out" src="media/cherry_pick.png" style="border-radius:20px"> -->
-<img class="r-stretch fragment fade-in-then-out" src="media/UQ_campus.jpg" style="border-radius:20px; height:500px">
-                <div class="r-vstack fragment fade-in-then-out">
-              <div class="r-hstack">
-<img src="media/pitch_drop.jpg" style="border-radius:20px">
-                <img src="media/pitch_QR.png" style="padding:10px;border-radius:20px">
-                </div>
-                <p style="background-color:white; opacity:0.8; border-radius:10px;color:black;padding:10px">thetenthwatch.com</p>
-              </div>
-
-          </div>
-        </section>
-
         <section>
-          <h3>The Problem with Direct Detection</h3>
-            <div style="background-color: #FFFFFF; opacity: 1.0;
-                                        border-radius: 30px; padding: 0px">
-            <div class="r-hstack">
-            <img src="figures/nu_floor.png" style="width: 1000px;padding: 10px">
-              <ul style="font-size:30px; padding:5px; line-height:140%;">
-                <li style="color:black;">Future experiments will face an irreducible neutrino background</li>
-                <li style="color:black;">Cannot be overcome with improved shielding, purification or design</li>
-                <li style="color:black;">The current generation of detectors are expected to detect neutrino nuclear recoils within a few years</li>
-              </ul>
+            <section data-background-image="figures/DMhalo.jpg">
+                    <h2 style="font-size: 80px"> What is Dark Matter?</h2>
+                <div style="background-color: #000000; opacity: 0.95;
+                                    border-radius: 30px; padding: 20px">
+          <div class="r-hstack">
+                    <!-- <p style="font-size:20pt">...in case you forgot.</p> -->
+                    <ul style="font-size:20pt">
+                        <li>Interacts gravitationally, 80% of total mass</li>
+                        <li>No EM interactions</li>
+                        <li>Forms halo structures around galaxies</li>
+                        <li>Mostly non-baryonic (beyond SM)</li>
+                        <li>Moves slowly ("cold")</li>
+                    </ul>
+            <div style="object-fit:cover; width: 900px; border-radius:20px">
+            <video id="galaxy" controls="" data-autoplay="" loop="" style="" onclick="this.paused ? this.play() : this.pause();" data-paused-by-reveal="">
+                    <source type="video/mp4" src="media/Galaxy_DM2.mp4" data-lazy-loaded="">
+                </video>
+                <script>
+                    var vid = document.getElementById("galaxy");
+                    vid.playbackRate = 0.75;
+                </script>
             </div>
           </div>
-        </section>
+                </div>
+            </section>
 
         <section data-background-color=#191919>
           <h3>Low-mass WIMPs</h3>
@@ -89,6 +78,23 @@
               <li>Recent improvements in technology have begun to make this mass range detectable for the first time.</li>
             </ul>
             </section>
+        </section>
+
+        <section>
+        <section>
+          <h3>The Problem with Direct Detection</h3>
+            <div style="background-color: #FFFFFF; opacity: 1.0;
+                                        border-radius: 30px; padding: 0px">
+            <div class="r-hstack">
+            <img src="figures/nu_floor.png" style="width: 1000px;padding: 10px">
+              <ul style="font-size:30px; padding:5px; line-height:140%;">
+                <li style="color:black;">Future experiments will face an irreducible neutrino background</li>
+                <li style="color:black;">Cannot be overcome with improved shielding, purification or design</li>
+                <li style="color:black;">The current generation of detectors are expected to detect neutrino nuclear recoils within a few years</li>
+              </ul>
+            </div>
+          </div>
+        </section>
 
             <section data-background-color=#191919>
                 <h3>Electron recoil signals</h3>
@@ -121,7 +127,9 @@
               </div>
                 </div>
             </section>
+        </section>
 
+        <section>
             <section data-background-color=#191919>
                 <h3>Solids, Liquids and Gasses</h3>
                 <div style="display:flex; justify-content:space-between; align-items:center;">
@@ -141,7 +149,7 @@
             </section>
 
         <section>
-          <h3>Solar neutrinos rates</h3>
+          <h3>Solar neutrino rates</h3>
           <div style="background-color: #FFFFFF; opacity: 1.0;
                                         border-radius: 30px; padding: 0px; color:black;">
           <div class="r-hstack">
@@ -154,10 +162,29 @@
             </ul>
           </div>
         </section>
+        </section>
+
+            <section data-background-color=#191919>
+                <video id="atom" controls="" data-autoplay="" loop="" style="" onclick="this.paused ? this.play() : this.pause();" data-paused-by-reveal="">
+                    <source type="video/mp4" src="media/DMbounce.mp4" data-lazy-loaded="">
+                </video>
+                <script>
+                    var vid = document.getElementById("atom");
+                    vid.playbackRate = 0.75;
+                </script>
+            </section>
 
             <section data-background-color=#191919 data-auto-animate>
                 <h3> Atomic Form Factor</h3>
-                <div data-id="K" style="font-size:30px">
+                <div data-id="K" style="font-size:40px">
+                    \[K_{njl} = E_H \sum_{\textcolor{orange}{m}} \sum_{\textcolor{cyan}{f}} |\textcolor{cyan}{\bra{f}}e^{iq\cdot r}\textcolor{orange}{\ket{njlm}}|^2 \rho_f(E)\]
+                </div>
+            </section>
+
+
+            <section data-background-color=#191919 data-auto-animate>
+                <h3> Atomic Form Factor</h3>
+                <div data-id="K" style="font-size:40px">
                     \[K_{njl} = E_H \sum_{\textcolor{orange}{m}} \sum_{\textcolor{cyan}{f}} |\textcolor{cyan}{\bra{f}}e^{iq\cdot r}\textcolor{orange}{\ket{njlm}}|^2 \rho_f(E)\]
                 </div>
           <div class="r-hstack">
@@ -178,12 +205,10 @@
           <div class="r-hstack" style="background-color: #FFFFFF; opacity: 1.0;
                                         border-radius: 30px; padding: 0px; color:black; font-size:30px">
             <figure>
-            <img src="figures/DMrate_Ge.png" style="">
-                <figcaption>Germanium</figcaption>
+            <img src="figures/Rates_Silicon.png" style="">
             </figure>
             <figure>
-            <img src="figures/DMrate_Xe.png" style="">
-                <figcaption>Xenon</figcaption>
+            <img src="figures/Rates_Xenon.png" style="">
             </figure>
             <!-- <figure> -->
             <!-- <img src="figures/DMrate_Iso.png" style=""> -->
@@ -195,12 +220,14 @@
                 </div>
             </section>
 
-        <section>
-          <h3>Event Rate Comparison</h3>
-          <img src="figures/Rate_Comp.png">
-        </section>
+    <section>
+        <section data-background-color=#191919 data-auto-animate>
+          <h3>Quantifying the Fog</h3>
+            <img src="figures/NuFog_1D_Silicon.png" style="height: 500px; border-radius:20px">
+                </section>
 
-                <section data-background-color=#191919>
+
+                 <section data-background-color=#191919 data-auto-animate>
                     <h3>Quantifying the Fog</h3>
                     <!-- \[n=-\left(\frac{\mathrm{d}\ln{\textcolor{cyan}{\sigma}}}{\mathrm{d}\ln{\textcolor{orange}{N}}}\right)^{-1}\] -->
           \[\textcolor{cyan}{\sigma} \propto \textcolor{orange}{N}^{-1/\textcolor{yellow}{n}}\]
@@ -214,53 +241,81 @@
           <p class="r-frame">\(\textcolor{yellow}{n}=2 \Rightarrow\) Poissonian background subtraction</p>
                 </section>
 
-        <section data-background-color=#191919 data-auto-animate>
-          <h3>Neutrino Fog for Nuclear Recoils</h3>
-            <img src="figures/NuFloor_Wide_axis.png" style="height: 500px; border-radius:20px">
+           <section data-background-color=#191919>
+                <div class="r-hstack">
+                    <div style="font-size:20pt" class="r-vstack">
+                        <p>If you're driving your car and you run into some fog, what do you do?</p>
+                        <p class="fragment fade-in" data-fragment-index="1">Do you stop, turn around and drive home?</p>
+                        <h1 class="fragment fade-in" data-fragment-index="2">
+                            <font color="red">No!</font>
+                        </h1>
+                        <p class="fragment fade-in" data-fragment-index="3">You apply for funding for brighter spotlights and you keep driving.</p>
+                    </div>
+                    <div style="padding:20px"></div>
+                    <div class="r-stack">
+                        <img src="media/dim_fog.jpg" class="fragment fade-out" data-fragment-index="3">
+                        <img src="media/bright_fog.jpg" class="fragment fade-in" data-fragment-index="3">
+                    </div>
+            </section>
+        </section>
+
+
+        <section data-background-color=#191919>
+          <h3>Silicon</h3>
+            <img src="figures/NuFog_2D_Si_HeavyMediator.png" style="height: 500px; border-radius:20px">
                 </section>
 
-        <section data-background-color=#191919 data-auto-animate>
-          <h3>Germanium</h3>
-            <img src="figures/NuFog_Ge.png" style="height: 500px; border-radius:20px">
-                </section>
 
-
-        <section data-background-color=#191919 data-auto-animate>
+        <section data-background-color=#191919>
           <h3>Liquid Xenon</h3>
             <div>
-             <img src="figures/NuFog_Xe.png" style="height: 500px; border-radius:20px">
+             <img src="figures/NuFog_2D_Xe_HeavyMediator.png" style="height: 500px; border-radius:20px">
             </div>
         </section>
 
 
           <section data-background-color=#191919 data-auto-animate>
-          <h3>Isobutane</h3>
+          <h3>Neon Gas</h3>
             <div>
-             <img src="figures/NuFog_Iso.png" style="height: 500px; border-radius:20px">
+             <img src="figures/NuFog_2D_Neon_HeavyMediator.png" style="height: 500px; border-radius:20px">
             </div>
           </section>
 
+        <section>
           <section data-background-color=#191919 data-auto-animate>
           <h3>Electron Recoil Neutrino Fogs</h3>
           <div class="r-hstack">
             <div>
-             <img src="figures/NuFog_Ge.png" style="border-radius:20px">
-           <p>Germanium</p> 
+             <img src="figures/NuFog_2D_Si_HeavyMediator.png" style="border-radius:10px">
+           <p>Silicon</p> 
             </div>
             <div>
-             <img src="figures/NuFog_Xe.png" style="border-radius:20px">
+             <img src="figures/NuFog_2D_Xe_HeavyMediator.png" style="border-radius:10px">
            <p>Xenon</p> 
             </div>
             <div>
-             <img src="figures/NuFog_Iso.png" style="border-radius:20px">
-           <p>Isobutane</p> 
+             <img src="figures/NuFog_2D_Neon_HeavyMediator.png" style="border-radius:10px">
+           <p>Neon</p> 
             </div>
           </div>
           </section>
 
-            <section data-background-color=#191919 data-auto-animate>
+        <section data-background-color=#191919>
+          <h3>Neutrino Fog for Nuclear Recoils</h3>
+            <img src="figures/NuFloor_Wide_axis.png" style="height: 500px; border-radius:20px">
+                </section>
+        </section>
+
+            <section data-background-color=#191919>
                 <h3>Summary</h3>
-                    <img src="figures/NuFog_Comb.png" style="height: 500px; border-radius:20px">
+          <div class="r-hstack">
+            <div>
+                    <img src="figures/NuFog_Combined_HeavyMediator.png" style="border-radius:10px">  
+            </div>
+            <div>
+              <img src="figures/NuFog_Combined_LightMediator.png" style="border-radius:10px">
+            </div>
+          </div>
             </section>
 
             <section data-background-color=#191919 data-auto-animate>
@@ -277,17 +332,26 @@
                 </div>
             </section>
 
-            <section data-background-image="media/title_bg.png">
-                <div style="background-color: #F0F1EB; opacity: 0.85;
+            <section data-background-image="figures/NuFloor_Wide.png">
+                <div style="background-color: #F0F1EB; opacity: 0.95;
                                    border-radius: 30px; padding: 15px">
-                    ` <h3 style="color:black;">Thanks for listening!</h3>
-                    <p style="color:black; font-size:25pt">Special thanks to Dr Ciaran O'Hare and the University of Sydney Astroparticle group for hosting me during this project.</p>
-                    <p style="font-size:30px; color:DimGrey;">ben.carew@uq.edu.au</p>
+                    <h2 style="color:black;">Thank you!</h2>
+            <!--<p style="color:grey;">ben.carew@uq.edu.au</p> -->
+                    <figure style="text-align:center; flex:1;">
+ <img style="height: 200px; margin: 0px 0px 0px 0px" src="media/QR.png" data-lazy-loaded="">
+                        <figcaption style="flex: 1; font-size:30pt; color:black">arxiv: 2312.04303</figcaption>
+                    </figure>
+              <div class="r=vstack">
+                    <img style="height: 80px; margin: 30px 20px 0px 20px" src="media/UQ_logo.png" data-lazy-loaded="">
+                    <img style="height: 80px; margin: 20px 20px 0px 20px" src="media/USyd_logo.png" data-lazy-loaded="">
+              </div>
+                    <p style="color:black; font-size:25pt">Supervisors: Dr Ben Roberts (UQ) and Dr Ciaran O'Hare (USyd)</p>
                 </div>
                 <div>
             </section>
         </div>
     </div>
+
 
     <script src="dist/reveal.js"></script>
     <script src="plugin/notes/notes.js"></script>
@@ -298,8 +362,8 @@
         Reveal.initialize({
             hash: true,
             plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX],
-            transition: 'fade',
-            controls: false,
+            transition: 'slide',
+            controls: true,
             progress: false
         });
     </script>
