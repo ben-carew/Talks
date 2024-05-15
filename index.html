@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, 
                                          initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <title>The neutrino fog for dark matter-electron scattering experiments</title>
+    <title></title>
     <meta name="author" content="Ben Carew">
     
     <link rel="stylesheet" href="dist/reset.css">
@@ -24,331 +24,231 @@
 <body>
     <div class="reveal">
         <div class="slides">
-
-            <section data-auto-animate data-background-image="figures/NuFloor_Wide.png">
-                <div style="background-color: #F0F1EB; opacity: 0.95;
-                                    border-radius: 30px; padding: 15px">
-                    <img class="plain" style="height: 80px; margin: 20px 20px 20px 20px" src="media/UQ_logo.png" data-lazy-loaded="">
-                    <img class="plain" style="height: 80px; margin: 20px 20px 20px 20px" src="media/USyd_logo.png" data-lazy-loaded="">
-                    `<h2 style="color:black;">Light WIMP Detection and the Neutrino Fog</h2>
-                    <p style="color:black;">Ben Carew</p>
-                    <p style="color:grey;">ben.carew@uq.edu.au</p>
-                </div>
-                <div>
-            </section>
-
         <section>
-            <section data-background-image="figures/DMhalo.jpg">
-                    <h2 style="font-size: 80px"> What is Dark Matter?</h2>
-                <div style="background-color: #000000; opacity: 0.95;
-                                    border-radius: 30px; padding: 20px">
+          <h2>Double Higgs Production</h2>
+          <div class="r-stretch">
+          <img style="padding:0px" src="figures/title.jpg">
+          </div>
           <div class="r-hstack">
-                    <!-- <p style="font-size:20pt">...in case you forgot.</p> -->
-                    <ul style="font-size:20pt">
-                        <li>Interacts gravitationally, 80% of total mass</li>
-                        <li>No EM interactions</li>
-                        <li>Forms halo structures around galaxies</li>
-                        <li>Mostly non-baryonic (beyond SM)</li>
-                        <li>Moves slowly ("cold")</li>
-                    </ul>
-            <div style="object-fit:cover; width: 900px; border-radius:20px">
-            <video id="galaxy" controls="" data-autoplay="" loop="" style="" onclick="this.paused ? this.play() : this.pause();" data-paused-by-reveal="">
-                    <source type="video/mp4" src="media/Galaxy_DM2.mp4" data-lazy-loaded="">
-                </video>
-                <script>
-                    var vid = document.getElementById("galaxy");
-                    vid.playbackRate = 0.75;
-                </script>
-            </div>
-          </div>
-                </div>
-            </section>
+            <p style="color: lightgrey">Ben Carew</p>
+            <div style="padding:60px"></div>
+            <p style="color: lightgrey">BSM Seminar</p>
+            <div style="padding:60px"></div>
+            <p style="color: lightgrey">16/05/24</p>
 
-        <section data-background-color=#191919>
-          <h3>Low-mass WIMPs</h3>
-                <div class="r-stack">
-                    <img style="padding:20px" data-fragment-index="0" src="media/DM_cands.png">
-                    <img class="fragment fade-in" style="padding:20px" data-fragment-index="1" src="media/DM_cands_edit.png">
-                </div>
-            <div style="background-color: #FFFFFF; opacity: 1.0;
-                                        border-radius: 30px; padding: 10px; font-size:30px">
-              <p style="color:black">Lee-Weinberg bound $m_\chi \gtrsim 2$ GeV for OK thermal relic density.</p>
-            <ul class="fragment fade-in" data-fragment-index="1" style="color:black">
-              <li>Sub-GeV WIMP models exist, i.e. scalar DM, non-thermal DM etc.</li>
-              <li>Recent improvements in technology have begun to make this mass range detectable for the first time.</li>
-            </ul>
-            </section>
+            <aside class="notes" data-markdown>
+- pp -> hh not yet observed
+
+- Double higgs production is a very rare process in the SM, a facor 1000 less likely than single higg production
+
+- Measurement of the double higgs production rate could be an effective probe for new physics, since the SM rate is so small 
+
+- In this talk I will motivate why double higgs decay is interesting, why it is a good probe for new physics, and discuss the theoretical and experimental challenges
+            </aside>
         </section>
 
         <section>
-        <section>
-          <h3>The Problem with Direct Detection</h3>
-            <div style="background-color: #FFFFFF; opacity: 1.0;
-                                        border-radius: 30px; padding: 0px">
-            <div class="r-hstack">
-            <img src="figures/nu_floor.png" style="width: 1000px;padding: 10px">
-              <ul style="font-size:30px; padding:5px; line-height:140%;">
-                <li style="color:black;">Future experiments will face an irreducible neutrino background</li>
-                <li style="color:black;">Cannot be overcome with improved shielding, purification or design</li>
-                <li style="color:black;">The current generation of detectors are expected to detect neutrino nuclear recoils within a few years</li>
-              </ul>
-            </div>
-          </div>
+          <h3>Motivation</h3>
+          <p>\[V = \frac{m^2_h}{2}h^2 + \textcolor{orange}{\lambda_3}h^3 + \textcolor{cyan}{\lambda_4}h^4\]</p>
+          <p style="font-size:35px">with \(\textcolor{orange}{\lambda_3^{SM}}=\frac{m^2_h}{2v}=0.13v\), and \(\textcolor{cyan}{\lambda_4^{SM}}=\frac{h^2}{8v^2}=0.03\)</p>
+          <div style="padding:20px"></div>
+          <ul>
+            <li>SM predicts weak Higgs self-couplings</li>
+            <li>\(\textcolor{orange}{\lambda_3}\) can only be probed by measuring double Higgs production rates</li>
+          </ul>
+            <aside class="notes" data-markdown>
+            - We want to measure the parameters of the Higgs potential to verify that electroweak symmetry breaking occurs in nature in the way that the SM predicts
+
+            - The self-couplings in the SM are very weak
+
+            - $v$ is the higgs energy vacuum expectation value
+
+            - the only way to directly measure \lambda_3 is by measuring double higgs production
+          </aside>
         </section>
 
-            <section data-background-color=#191919>
-                <h3>Electron recoil signals</h3>
-                <div class="r-hstack">
-                  <div class="r-vstack">
-                    <img src="figures/DMn_limit.png" style="height:49%; 
-                                                              background: transparent;border-radius:20px">
-              <div class="r-vstack" style="background-color: #FFFFFF; opacity: 1.0;
-                                        border-radius: 30px; padding: 10px">
-                <p style="font-size:35px; color:black">DM $\leftrightarrow$ Nucleus</p>
-                <ul style="font-size:25px; color:black">
-                  <li>$m_\chi \gtrsim 1$ GeV</li>
-                  <li>Main focus of most current detectors</li>
-                  <li>Limits down to $\sigma \sim 10^{-46}$</li>
-                </ul>
-                </div>
-                  </div>
-              <div class="r-vstack">
-                    <img src="figures/DM_limit.png" data-lazy-loaded="" style="height: 49%;
-                                                            background: transparent; border-radius:20px">
-              <div class="r-vstack" style="background-color: #FFFFFF; opacity: 1.0;
-                                        border-radius: 30px; padding: 10px">
-                <p style="font-size:35px;color:black;">DM $\leftrightarrow$ Electrons</p>
-                <ul style="font-size:25px; color:black;">
-                  <li>$m_\chi \lesssim 1$ GeV</li>
-                  <li>Few experiments capable of measuring</li>
-                  <li>Limits are much weaker</li>
-                </ul>
-                </div>
-              </div>
-                </div>
-            </section>
-        </section>
-
-        <section>
-            <section data-background-color=#191919>
-                <h3>Solids, Liquids and Gasses</h3>
-                <div style="display:flex; justify-content:space-between; align-items:center;">
-                    <figure style="text-align:center; flex:1; padding:10px">
-                        <img src="media/SENSEI.png" alt="Image 1" style="object-fit:cover; width: 320px; height: 320px; border-radius:20px">
-                        <figcaption style="flex: 1; font-size:20pt;">Semiconductor ionisation detectors</figcaption>
-                    </figure>
-                    <figure style="text-align:center; flex:1;padding:10px">
-                        <img src="figures/detector_final.png" alt="Image 2" style="object-fit:cover; width: 300px; height: 340px;">
-                        <figcaption style="flex: 1; font-size:20pt;">Noble liquid time-projection chambers</figcaption>
-                    </figure>
-                    <figure style="text-align:center; flex:1; padding:10px">
-                        <img src="media/NEWS-G.png" alt="Image 3" style="object-fit:cover; width: 320px; height: 320px; border-radius:20px">
-                        <figcaption style="flex: 1; font-size:20pt;">Spherical proportion counters</figcaption>
-                    </figure>
-                </div>
-            </section>
-
-        <section>
-          <h3>Solar neutrino rates</h3>
-          <div style="background-color: #FFFFFF; opacity: 1.0;
-                                        border-radius: 30px; padding: 0px; color:black;">
-          <div class="r-hstack">
-                <img src="figures/NuFlux.png" style="height:350px; padding:10px">
-                <img src="figures/nu_dR_All.png" style="height:350px; padding:10px">
-          </div>
-          <ul style="font-size:25px">
-          <li>$pp$ has largest flux, dominates $\nu$-$e$ signal.</li>
-          <li>$hep$ and $^8B$ have highest energy, dominates $\nu$-nucleus signal.</li>
-            </ul>
-          </div>
-        </section>
-        </section>
-
-            <section data-background-color=#191919>
-                <video id="atom" controls="" data-autoplay="" loop="" style="" onclick="this.paused ? this.play() : this.pause();" data-paused-by-reveal="">
-                    <source type="video/mp4" src="media/DMbounce.mp4" data-lazy-loaded="">
-                </video>
-                <script>
-                    var vid = document.getElementById("atom");
-                    vid.playbackRate = 0.75;
-                </script>
-            </section>
-
-            <section data-background-color=#191919 data-auto-animate>
-                <h3> Atomic Form Factor</h3>
-                <div data-id="K" style="font-size:40px">
-                    \[K_{njl} = E_H \sum_{\textcolor{orange}{m}} \sum_{\textcolor{cyan}{f}} |\textcolor{cyan}{\bra{f}}e^{iq\cdot r}\textcolor{orange}{\ket{njlm}}|^2 \rho_f(E)\]
-                </div>
-            </section>
-
-
-            <section data-background-color=#191919 data-auto-animate>
-                <h3> Atomic Form Factor</h3>
-                <div data-id="K" style="font-size:40px">
-                    \[K_{njl} = E_H \sum_{\textcolor{orange}{m}} \sum_{\textcolor{cyan}{f}} |\textcolor{cyan}{\bra{f}}e^{iq\cdot r}\textcolor{orange}{\ket{njlm}}|^2 \rho_f(E)\]
-                </div>
-          <div class="r-hstack">
+        <section data-auto-animate>
+          <h3>Gluon Fusion</h3>
+          <img class="r-frame" style="padding:20px" src="figures/feynmans.png">
+          <p style="font-size:25px">\[A^{\mu\nu}_{AB}=\frac{\alpha_s}{8\pi v^2}\delta_{AB}\left[P^{\mu\nu}_0(p_1,p_2)\textcolor{orange}{\hat{F}_1}(s,t,u,m_t^2)+P^{\mu\nu}_2(p_1,p_2,p_3)\textcolor{cyan}{\hat{F}_2}(s,t,u,m_t^2)\right]\]</p>
+          <aside class="notes" data-markdown>
+            - Double higgs production rate is dependent on:
+              - BSM coloured particles at loop-order
+              - cubic higgs coupling constant
+              - Top quark Yukawa couplings (coupling to higgs)
             
-                <ul style="font-size:30px">
-                    <li>
-                        <font color="orange">Electron wavefunctions</font> must be calculated relativistically
-                    </li>
-                    <li>Cannot approximate <font color="Cyan">final state electron</font> as a plane wave</li>
-                    <li>Requires accurate atomic physics methods</li>
-                </ul>
-          <img src="figures/AKq.png" style="border-radius:20px">
-          </div>
-            </section>
-
-            <section data-background-color=#191919>
-          <h3>Dark Matter Event Rates</h3>
-          <div class="r-hstack" style="background-color: #FFFFFF; opacity: 1.0;
-                                        border-radius: 30px; padding: 0px; color:black; font-size:30px">
-            <figure>
-            <img src="figures/Rates_Silicon.png" style="">
-            </figure>
-            <figure>
-            <img src="figures/Rates_Xenon.png" style="">
-            </figure>
-            <!-- <figure> -->
-            <!-- <img src="figures/DMrate_Iso.png" style=""> -->
-            <!--     <figcaption>Isobutane</figcaption> -->
-            <!-- </figure> -->
-          </div>
-                <div style="font-size:20pt">
-            \[\frac{\mathrm{d}R_{\chi}}{\mathrm{d}E} = \frac{n_T\textcolor{cyan}{\rho_{DM}}}{\textcolor{orange}{m_\chi} c^2}\frac{\textcolor{Yellow}{\overline{\sigma}_e}}{2m_e c} \int \mathrm{d}v\textcolor{cyan}{\frac{f(v)}{v/c}} \int_{q_-}^{q_+} a_0^2 q\mathrm{d}q \textcolor{orange}{\left|F^\mu_\chi (q)\right|^2}\textcolor{magenta}{K(E,q)}\]
-                </div>
-            </section>
-
-    <section>
-        <section data-background-color=#191919 data-auto-animate>
-          <h3>Quantifying the Fog</h3>
-            <img src="figures/NuFog_1D_Silicon.png" style="height: 500px; border-radius:20px">
-                </section>
-
-
-                 <section data-background-color=#191919 data-auto-animate>
-                    <h3>Quantifying the Fog</h3>
-                    <!-- \[n=-\left(\frac{\mathrm{d}\ln{\textcolor{cyan}{\sigma}}}{\mathrm{d}\ln{\textcolor{orange}{N}}}\right)^{-1}\] -->
-          \[\textcolor{cyan}{\sigma} \propto \textcolor{orange}{N}^{-1/\textcolor{yellow}{n}}\]
-                    <p style="font-size:20pt">i.e. How does the discovery limit decrease with the exposure?</p>
-                    <p>
-                        <font color="cyan">\(\sigma=\) the discovery limit</font>
-                    </p>
-                    <p>
-                        <font color="orange">\(N=\) the number of background events</font>
-                    </p>
-          <p class="r-frame">\(\textcolor{yellow}{n}=2 \Rightarrow\) Poissonian background subtraction</p>
-                </section>
-
-           <section data-background-color=#191919>
-                <div class="r-hstack">
-                    <div style="font-size:20pt" class="r-vstack">
-                        <p>If you're driving your car and you run into some fog, what do you do?</p>
-                        <p class="fragment fade-in" data-fragment-index="1">Do you stop, turn around and drive home?</p>
-                        <h1 class="fragment fade-in" data-fragment-index="2">
-                            <font color="red">No!</font>
-                        </h1>
-                        <p class="fragment fade-in" data-fragment-index="3">You apply for funding for brighter spotlights and you keep driving.</p>
-                    </div>
-                    <div style="padding:20px"></div>
-                    <div class="r-stack">
-                        <img src="media/dim_fog.jpg" class="fragment fade-out" data-fragment-index="3">
-                        <img src="media/bright_fog.jpg" class="fragment fade-in" data-fragment-index="3">
-                    </div>
-            </section>
+            - gluon fusion is the dominant process in pp->hh
+            
+            - Leading contribution of gg->hh is top quark loop.
         </section>
 
+        <section data-auto-animate>
+          <img class="r-frame" style="padding:20px" src="figures/feynmans.png">
+          <p style="font-size:20px">\[A^{\mu\nu}_{AB}=\frac{\alpha_s}{8\pi v^2}\delta_{AB}\left[P^{\mu\nu}_0(p_1,p_2)\textcolor{orange}{\hat{F}_1}(s,t,u,m_t^2)+P^{\mu\nu}_2(p_1,p_2,p_3)\textcolor{cyan}{\hat{F}_2}(s,t,u,m_t^2)\right]\]</p>
+          <p style="font-size:25px">Assuming for now $\textcolor{red}{m_t}>>\textcolor{lightgreen}{s}$:</p>
+          <p style="font-size:20px">\[\textcolor{orange}{\hat{F}_1}(s,t,u,m_t^2) = \textcolor{yellow}{\hat{F}_1^{tri}}(s,t,u,m_t^2)+\textcolor{fuchsia}{\hat{F}_1^{box}}(s,t,u,m_t^2)\]</p>
+          <p style="font-size:20px">\(\textcolor{yellow}{\hat{F}^{tri}_1}(s,t,u,m_t^2) = \frac{4m_h^2}{\textcolor{lightgreen}{s}-m_h^2}\textcolor{lightgreen}{s}\left(\frac{\lambda_3}{\lambda_3^{SM}}\right)\), and  
+            \(\textcolor{fuchsia}{\hat{F}^{box}_1}(s,t,u,m_t^2) = -\frac{4}{3}\textcolor{lightgreen}{s}\)</p>
+          <p style="font-size:20px">\[\textcolor{cyan}{\hat{F}_2}(s,t,u,m_t^2) = -\frac{11}{45}\textcolor{lightgreen}{s}\frac{p^2_T}{\textcolor{red}{m^2_t}}\]</p>
+          <p style="font-size:30px">Everything vanishes at the energy threshold, $\sqrt{\textcolor{lightgreen}{s}}=2m_h$ and $\textcolor{red}{m_t}\rightarrow \infty$.</p>
+            <aside class="notes" data-markdown>
+            - P_0 and P_2 are projectors of the spin 0 and spin 2 states respectively
+              - spin can be 0 or 2 from $h\rightarrow\gamma\gamma$, photon spins add/cancel
 
-        <section data-background-color=#191919>
-          <h3>Silicon</h3>
-            <img src="figures/NuFog_2D_Si_HeavyMediator.png" style="height: 500px; border-radius:20px">
-                </section>
+            - s, t, u are mandelstam variables, p_T is transverse higgs momentum
 
+            - F functions have known analytical solutions. The largest contributions are from top quark loops
 
-        <section data-background-color=#191919>
-          <h3>Liquid Xenon</h3>
-            <div>
-             <img src="figures/NuFog_2D_Xe_HeavyMediator.png" style="height: 500px; border-radius:20px">
-            </div>
+            - the F functions vanish at the limit s=, which means we cannot make this assumption and get useful results
+          </aside>
         </section>
-
-
-          <section data-background-color=#191919 data-auto-animate>
-          <h3>Neon Gas</h3>
-            <div>
-             <img src="figures/NuFog_2D_Neon_HeavyMediator.png" style="height: 500px; border-radius:20px">
-            </div>
-          </section>
+          <!-- 
+          <p style="font-size:20px">\[P^{\mu\nu}_0(p_1,p_2)=g^{\mu\nu}-\frac{p^\nu_1 p^\mu_2}{p_1\cdot p_2}\]</p>
+          <p style="font-size:20px">\[P^{\mu\nu}_2(p_1,p_2,p_3)=g^{\mu\nu}+\frac{2}{sp^2_T}(m_h^2p^\nu_1 p_2^\mu-2 p_1\cdot p_3p^\mu_2 p^\nu_3-2 p_2\cdot p_3 p_1^\mu p_3\nu+sp^\mu_3 p^\nu_3)\]</p>
+            -->
 
         <section>
-          <section data-background-color=#191919 data-auto-animate>
-          <h3>Electron Recoil Neutrino Fogs</h3>
-          <div class="r-hstack">
-            <div>
-             <img src="figures/NuFog_2D_Si_HeavyMediator.png" style="border-radius:10px">
-           <p>Silicon</p> 
-            </div>
-            <div>
-             <img src="figures/NuFog_2D_Xe_HeavyMediator.png" style="border-radius:10px">
-           <p>Xenon</p> 
-            </div>
-            <div>
-             <img src="figures/NuFog_2D_Neon_HeavyMediator.png" style="border-radius:10px">
-           <p>Neon</p> 
-            </div>
-          </div>
-          </section>
+            <h3>Kinematic Distribution</h3>
+          <img class="r-stretch"style="padding:20px" src="figures/pphhXsec.png">
 
-        <section data-background-color=#191919>
-          <h3>Neutrino Fog for Nuclear Recoils</h3>
-            <img src="figures/NuFloor_Wide_axis.png" style="height: 500px; border-radius:20px">
-                </section>
+            <aside class="notes" data-markdown>
+            - Perform calculations by expanding in powers of the top mass does not work, due to large contributions from terms containing s/m_t^2.
+          </aside>
         </section>
 
-            <section data-background-color=#191919>
-                <h3>Summary</h3>
-          <div class="r-hstack">
-            <div>
-                    <img src="figures/NuFog_Combined_HeavyMediator.png" style="border-radius:10px">  
-            </div>
-            <div>
-              <img src="figures/NuFog_Combined_LightMediator.png" style="border-radius:10px">
-            </div>
+        <section>
+          <h3>A Better Approach</h3>
+            <ol>
+            <li>Compute \(K = \frac{d\sigma_{NNLO}}{d\sigma_{LO}}\) at the limit of \(\textcolor{orange}{m_t \rightarrow \infty}\)</li>
+            <li>Calculate the leading order term with <font color="Cyan">finite</font> \(\textcolor{cyan}{m_t}\)</li>
+              <li>Use $K$ to rescale the leading order term and calculate NLO with $m_t$ effects
+            </ol>
+          <div style="padding:10px"></div>
+                <div style="background-color: #F0F1EB; opacity: 0.95; border-radius: 30px; padding: 10px">
+          <p style="color:black;font-size:30px">Using this method, the exact NLO term for double Higgs production has been computed with all finite $m_t$ effects!</p>
           </div>
-            </section>
 
-            <section data-background-color=#191919 data-auto-animate>
-                <h3>Solutions</h3>
-                <div style="display:flex; justify-content:space-between; align-items:center;">
-                    <figure style="text-align:center; flex:1;">
-                        <img src="media/Halo.png" alt="Image 4" style="width: 400px; height: 320px; border-radius:20px">
-                        <figcaption style="flex: 1; font-size:20pt;">Directional detection</figcaption>
-                    </figure>
-            <figure style="text-align:center; flex:1;">
-                        <img src="figures/reduce_uncert.png" alt="Image 4" style="width: 400px; height: 320px; border-radius:20px">
-                        <figcaption style="flex: 1; font-size:20pt;">Reduce neutrino flux uncertainties</figcaption>
-                    </figure>
-                </div>
-            </section>
+            <aside class="notes" data-markdown>
+            - Talking points are written on the slide
+          </aside>
+        </section>
 
-            <section data-background-image="figures/NuFloor_Wide.png">
-                <div style="background-color: #F0F1EB; opacity: 0.95;
-                                   border-radius: 30px; padding: 15px">
-                    <h2 style="color:black;">Thank you!</h2>
-            <!--<p style="color:grey;">ben.carew@uq.edu.au</p> -->
-                    <figure style="text-align:center; flex:1;">
- <img style="height: 200px; margin: 0px 0px 0px 0px" src="media/QR.png" data-lazy-loaded="">
-                        <figcaption style="flex: 1; font-size:30pt; color:black">arxiv: 2312.04303</figcaption>
+        <section>
+          <h3>QCD Approximations</h3>
+          <img class="r-stretch" style="padding:20px" src="figures/approx.png">
+
+            <aside class="notes" data-markdown>
+            - Plot compares various approximations for the QCD corrections on the cross-section (explain the approximations)
+
+            - Effects of top mass at NLO are very large, ~14% at 14TeV
+
+            - The curve labelled NLO is the best we can do, it includes all finite top mass effects
+          </aside>
+        </section>
+
+        <section>
+          <h3>Double Higgs to Test New Physics</h3>
+          <img class="r-stretch" style="padding:20px" src="figures/BSMdepend.png">
+
+            <aside class="notes" data-markdown>
+            - Plot shows theory prediction of various pp->hh processes as a function of the deviation of \lambda_3 from the SM prediction
+
+            - Dashed lines and light bands = LO. Solid lines and dark bands = NLO
+
+            - Bands = scale and PDF uncertainties
+
+            - Point out processes which are better/worse BSM tests
+          </aside>
+        </section>
+
+        <section>
+          <h3>Experimental Progress</h3>
+          <div class="r-hstack">
+          <figure style="text-align:center; flex:1;">
+          <p class="r-frame" style="padding:10px">\[\frac{\sigma(pp\rightarrow hh)}{\sigma(pp\rightarrow hh)_{SM}}<29\]</p>
+                        <figcaption style="flex: 1; font-size:30pt;">ATLAS - \(b\bar{b}b\bar{b}\)</figcaption>
                     </figure>
-              <div class="r=vstack">
-                    <img style="height: 80px; margin: 30px 20px 0px 20px" src="media/UQ_logo.png" data-lazy-loaded="">
-                    <img style="height: 80px; margin: 20px 20px 0px 20px" src="media/USyd_logo.png" data-lazy-loaded="">
-              </div>
-                    <p style="color:black; font-size:25pt">Supervisors: Dr Ben Roberts (UQ) and Dr Ciaran O'Hare (USyd)</p>
-                </div>
-                <div>
-            </section>
+            <div style="padding:50px"></div>
+          <figure style="text-align:center; flex:1;">
+          <p class="r-frame" style="padding:10px">\[\frac{\sigma(pp\rightarrow hh)}{\sigma(pp\rightarrow hh)_{SM}}<19\]</p>
+                        <figcaption style="flex: 1; font-size:30pt;">CMS - \(b\bar{b}\gamma\gamma\)</figcaption>
+                    </figure>
+          </div>
+          <div style="padding:20px"></div>
+                <div style="background-color: #F0F1EB; opacity: 0.95; border-radius: 30px; padding: 5px">
+            <p class="r-fit-text" style="color:black">Prediction for HL-LHC with $L=\text{3 ab}^{-1}$ will be sensitive to $\frac{\lambda_3}{\lambda_3^{SM}} > 8.7$, and $\frac{\lambda_3}{\lambda_3^{SM}} < -1.3$</p>
+        </div>
+          <p class="fragment fade-up" style="padding:20px;color:lightgrey;font-size:30px">There's a long way to go!</p>
+
+            <aside class="notes" data-markdown>
+            - These limits are from LHC 8 TeV data
+
+            - ATLAS has predicted that with the LHC luminosity upgrade will improve limits, but not enough
+
+            - This is one of the main motivators for building a 100TeV collider, to improve these limits
+          </aside>
+        </section>
+
+        <section>
+          <h3>BSM Models</h3>
+        <div class="r-hstack">
+         <div>
+              <p>\[gg\rightarrow \textcolor{orange}{X} \rightarrow \textcolor{cyan}{hh}\]</p>
+          <ul style="font-size:25px">
+                <li>Proposed new particle(s): Heavy "<font color="orange">new Higgs</font>", neutral scalar</li>
+                <li>Decays to <font color="cyan">2 SM Higgs</font> particles with $\sim 30\%$ BR</li>
+                <li>Models predict $s$-channel resonance</li>
+                <li>Interference from SM Higgs production</li>
+          </ul>
+         </div> 
+          <img class="r-stretch" style="padding:20px" src="figures/ScalarDecay.png">
+        </div>
+
+            <aside class="notes" data-markdown>
+          - Plot shows a Z_2 singlet model, adds a heavy neutral scalar particle with mass ~300GeV
+
+          - The plot structure is due to s-channel resonance (peak), and from SM higgs production interference (trough)
+
+          - These BSM models can have branching ratios up to 30%, which is significant and measurable
+          </aside>
+        </section>
+
+        <section>
+          <h3>Experimental Limits</h3>
+          <img class="r-stretch" style="padding:20px" src="figures/limits.png">
+
+            <aside class="notes" data-markdown>
+            - Plot shows LHC limits on double higgs production through new physics mechanisms with resonant decays
+
+            - Plotted as a function of the new physics mass scale
+          </aside>
+        </section>
+
+        <section>
+          <h3>Another Solution?</h3>
+          <ul class="r-stretch">
+            <li>It may be possible to measure $\lambda_3$ from <font color="orange">electroweak radiative corrections</font> on single Higgs production rates</li>
+            <li>$\lambda_3$ appears in <font color="cyan">2-loop order</font> of $gg\rightarrow h$ and 1-loop in other rarer production mechanisms</li>
+            <li>The high-luminosity LHC upgrade will not significantly improve the BSM constraints from this method</li>
+          </ul>
+          <p>\[2\sigma: -9.4<\frac{\lambda_3}{\lambda_3^{SM}}<16\]</p>
+        </section>
+
+      <section>
+        <h3>Summary</h3>
+        <ul class="r-stretch" style="font-size:35px">
+          <li>Higgs physics has 2 goals:
+          <ul>
+              <li>to test the SM <font color="orange">electroweak symmetry breaking</font> for SM deviations through the Higgs potential parameters
+</li>
+              <li>To search for hints of <font color="cyan">new particles</font> due to non-SM decays or cross sections</li>
+          </ul></li>
+          <li>Theory challenges: QCD renders perturbation theory ineffective, need <font color="yellow"> new theory methods</font> for calculating $>$NLO terms
+</li>
+          <li>Experimental challenges: Many BSM models are allowed, <font color="fuchsia">need better limits</font> - and therefore a bigger collider!
+</li>
+        </ul>
+      </section>
         </div>
     </div>
 
@@ -363,8 +263,9 @@
             hash: true,
             plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX],
             transition: 'slide',
-            controls: true,
-            progress: false
+            controls: false,
+            progress: true,
+            slideNumber: true
         });
     </script>
 </body>
