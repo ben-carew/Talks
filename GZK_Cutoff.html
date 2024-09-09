@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>GZK Cutoff and Ultra-High-Energy Cosmic Rays</title>
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js/dist/reveal.css">
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js/dist/theme/dracula.css" id="theme">
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://unpkg.com/reveal.js/dist/reveal.js"></script>
+  <script src="https://unpkg.com/reveal.js/plugin/math/math.js"></script>
+  <style>
+    .ho {
+      color: orange;
+    }
+
+    .hc {
+      color: cyan;
+    }
+
+    .image-container {
+      text-align: center;
+      margin: 20px 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section>
+        <h3>GZK Cutoff and Ultra-High-Energy Cosmic Rays</h3>
+        <img class="r-stretch" src="figures/title.jpg" alt="Title" style="max-width: 80%;">
+        <p>Neutrino and Gamma Astronomy Seminar</p>
+        <p>Ben Carew, 23-05-24</p>
+      </section>
+
+      <section>
+        <h3>Cosmic Rays</h3>
+        <div class="r-hstack">
+          <ul style="font-size:25px; white-space: pre-line">
+            <li>89% protons, 10% helium nuclei, 1% heavier nuclei</li>
+            <li>~1 muon per second per human head</li>
+            <li>Energy ranges from 1 GeV to $10^8$ TeV</li>
+          </ul>
+          <div class="r-stack" style="width:50%">
+            <figure style="padding:15px">
+              <img src="figures/balloon.webp" alt="shower" style="max-height:50%">
+              <figcaption style="font-size:20px">Victor Hess, 1912</figcaption>
+            </figure>
+            <figure class="fragment" style="padding:15px">
+              <img src="figures/shower.png" alt="shower" style="max-height:50%">
+              <figcaption style="font-size:20px">$p+n\rightarrow \pi^{\pm} \rightarrow \mu^{\pm}$</figcaption>
+            </figure>
+          </div>
+        </div>
+        <aside class="notes" data-markdown>
+          - Discovered in 1912 by Victor Hess on a balloon
+          - 89% protons, 10% helium nuclei, 1% heavier nuclei
+          - Collide with nuclei in upper atmoshpere, create mainly pions
+          - Pions decay quickly into muons, which travel to earth
+          - CR flux is ~1 muon per second per human head
+          - Energy ranges from 1 GeV to 1e8 TeV
+        </aside>
+      </section>
+
+      <section>
+        <h3>Ultra High Energy Cosmic Rays <span class="hc">(UHECRs)</span></h3>
+        <ul style="font-size:25px; white-space: pre-line">
+          <li>Flux falls off with energy, from $10^5/m^2/s$ to $<1 /km^2/$century</li>
+          <li>Produce showers of 10 billion particles, spread over $20km^2$</li>
+          <li>Sources:<ul>
+              <li>Remnant supernovae, e.g. Crab Nebula</li>
+              <li>supermassive black holes</li>
+              <li>high-energy astrophysical phenomena</li>
+            </ul>
+        </ul>
+        <aside class="notes" data-markdown>
+          - Flux falls off with energy, from 1e5/m^2/s to <1 /km^2/century. - UHECRs can produce showers of 10 billion
+            particles, spread over 20km^2 - Sources - low energy: solar wind. High energy: hard to tell - Can use
+            high-energy gamma rays (no magnetism) to find sources of charged CRs - UHECRs come from supernova remnants
+            i.e. crab nebula, or SMBHs. </aside>
+      </section>
+
+      <section data-auto-animate>
+        <h3>The GZK Cut-Off</h3>
+        <p>$p + \gamma \rightarrow \Delta^+ \rightarrow \rho^+ + \pi^0$ or $n + \pi^+$</p>
+        <p>Minimum energy: \( p^\mu_p + p^\mu_\gamma = p^\mu_\Delta \)</p>
+        <p>\( m_p^2 + 2p_p\cdot p_\gamma + 0 = m_\Delta^2 \)</p>
+        <p>\( p_p\cdot p_\gamma = |p_p||p_\gamma|\cos{\theta} \approx E_p \cdot E_\gamma \cos{\theta} \)</p>
+        <p>\( E_p = \frac{m_\Delta^2 - m_p^2}{2E_\gamma(1-\cos{\theta})} = 2.4 \times 10^{20} \) eV</li>
+        <aside class="notes" data-markdown>
+          - due to collisions of protons with photons of CMB, produce pions
+          - reduces proton energy by ~20%, continues until energy lower threshold reached
+          - only protons below this threshold will reach us
+          - proton + photon -> delta^+ -> rho^+ + pi^0 or neutron + pi^+
+          - calculate minimum energy such that the proton can just produce a pion
+          - consider the proton + gamma -> delta^+ process. Four-momentum is conserved
+          - p^\mu_p + p^\mu_\gamma = p^\mu_\delta
+          - square this, use p^2 = m^2
+          - m_p^2 + 2p^\mu\cdotp_\gamma + 0 = m_delta^2
+          - p^\mu\cdotp_\gamma = \abs{p_p}\abs{p_\gamma}\cos{\theta} \approx E_p*E_\gamma\cos{
+          \theta}
+          - E_p = \frac{m_\delta^2-m_p^2}{2E_\gamma(1-\cos{\theta}}
+          - experimental data for m_\delta = 1.232e9 eV, m_p = 9.383e8 eV, E_\gamma=6.626e-4 eV
+          - pick \theta = \pi for lowest energy. Add back in c^4 for units
+          - E_p = 2.4e20 eV
+        </aside>
+      </section>
+
+      <section data-auto-animate>
+        <h3>The GZK Cut-Off</h3>
+        <div class="r-hstack">
+          <ul style="font-size:25px; white-space: pre-line">
+            <li>Including CMB thermal distribution and \( \Delta \) resonance makes it slightly lower,
+              \( E_p < 5 \times 10^{19} \) eV \( \approx 8 \)J</li>
+            <li>Very high energy for proton,
+              \( v = 0.9999999999999999999998c \) (21 9s)</li>
+            <li>GZK cutoff experimentally observed in 2008 (controversial, unconfirmed?)</li>
+          </ul>
+          <div class="r-stack">
+            <figure class="fragment fade-out" style="padding:15px" data-fragment-index="0">
+              <img src="figures/GZK.png" alt="shower" style="height:500px">
+            </figure>
+            <figure class="fragment" style="padding:15px" data-fragment-index="0">
+              <img src="figures/GZK2.png" alt="shower" style="height:500px">
+            </figure>
+          </div>
+        </div>
+        <aside class="notes" data-markdown>
+          - including CMB thermal distribution and \delta resonance makes slightly lower, E_p $<$ 5e9 eV \approx 8J -
+            Very high energy for proton, would have v=0.9999999999999999999998c (21 9s) - GZK cutoff experimentally
+            observed in 2008 (controversial, unconfirmed?) - but higher energy CRs reported -> GZK/cosmic ray paradox
+        </aside>
+      </section>
+
+      <section>
+        <h3>Experimental Verification</h3>
+        <img src="figures/expGZK.png" alt="expGZK" style="max-height:100%">
+
+      </section>
+
+      <section>
+        <h3>The Telescope Array Experiment</h3>
+        <div class="r-hstack">
+          <img src="figures/grid.png" alt="grid" style="padding: 10px; height: 500px">
+          <img src="figures/detector.png" alt="detector" style="padding: 10px; height: 500px">
+        </div>
+        <aside class="notes" data-markdown>
+          - International collaboration - Japan, US, Russia, South Korea, Belgium
+          - Located in Utah, 1400m altitude
+          - Hybrid system designed for CR shower detection
+          - 507 scintillation surface detectors measure charged particle distribution
+          - 3 fluorescence stations for night sky observation, measure scintillation light from charged particles in
+          atmosphere, can measure primary particle mass
+          - LIDAR system for atmospheric monitoring
+        </aside>
+      </section>
+
+      <section>
+        <h3>Key Measurements</h3>
+        <div class="r-hstack">
+          <img src="figures/space.png" alt="space" style="padding: 10px; height: 500px">
+          <img src="figures/time.png" alt="time" style="padding: 10px; height: 500px">
+        </div>
+        <aside class="notes" data-markdown>
+          - Surface detectors are evenly distributed across a 762km^2 grid, 1.2km between each
+          - Surface detectors have 3m^2 of scintillating detection area
+          - Uses arrival time of shower signal at different detectors to measure direction
+        </aside>
+      </section>
+
+      <section>
+        <h3>27th May, 2021</h3>
+        <div class="r-hstack">
+          <img src="figures/data_space.png" alt="space" style="padding: 10px; height: 500px">
+          <img src="figures/data_time.png" alt="time" style="padding: 10px; height: 500px">
+        </div>
+        <figcaption style="font-size:20px">244 ± 29 EeV $\approx 40$ million $\times$ LHC energy!</figcaption>
+        <aside class="notes" data-markdown>
+          - Explain figures
+        </aside>
+      </section>
+
+      <section>
+        <h3>What We Know</h3>
+        <ul style="white-space: pre-line; font-size: 30px">
+          <li>Nucleon collision (if proton) was ~700 TeV</li>
+          <li>Machine learning excludes photon as primary particle at 99.986% confidence</li>
+          <li>Bright moonlight, fluorescence stations turned off $\rightarrow$ can't distinguish proton or nucleus</li>
+          <li>Detector simulation $\rightarrow$ 29 EeV energy resolution</li>
+          <li>No lightning activity recorded in the vicinity</li>
+        </ul>
+        <aside class="notes" data-markdown>
+          - 27th May 2021, 244 \pm 29 EeV
+          - 40 million times higher energy than LHC!
+          - Nucleon collision (if proton) was ~700 TeV
+          - Machine learning excludes photon as primary particle at 99.986% confidence
+          - Bright moon light -> fluroescence stations turned off -> not sure if proton or heavy nucleus
+          - Detector simulation -> 29 EeV energy resolution
+          - No lightning activity recorded in the vicinity on that day
+        </aside>
+      </section>
+
+      <section>
+        <h3>Previous UHECR Events</h3>
+        <table>
+          <tr>
+            <th>Year</th>
+            <th>Detector</th>
+            <th>Energy</th>
+          </tr>
+          <tr>
+            <td>1991</td>
+            <td>Fluorescence</td>
+            <td>320 EeV</td>
+          </tr>
+          <tr>
+            <td>1993</td>
+            <td>Fluorescence & scintillation </td>
+            <td>213 EeV</td>
+          </tr>
+          <tr>
+            <td>2001</td>
+            <td>Fluorescence & scintillation </td>
+            <td>280 EeV</td>
+          </tr>
+          <tr>
+            <td>2021</td>
+            <td>Fluorescence & scintillation </td>
+            <td>309 EeV</td>
+          </tr>
+        </table>
+        <aside class="notes" data-markdown>
+          - Other UHECRs - 320 EeV 1991, 213 EeV 1993, 280 EeV 2001
+          - 244 EeV of 2021 event is normalised to energy measured with only fluorescence detector, for comparison with
+          1991 event.
+          - Scintillators provide direct calorimetric energy measurement = 309\pm 37 EeV, comparable with previous
+          events
+        </aside>
+      </section>
+
+      <section>
+        <h3>Possible Trajectories</h3>
+        <div class="r-stack" style="">
+          <figure style="padding:15px">
+            <img src="figures/trajectory.png" alt="shower" style="max-height:50%">
+          </figure>
+          <figure class="fragment" style="padding:15px">
+            <img src="figures/other_traj.png" alt="shower" style="max-height:50%">
+          </figure>
+        </div>
+        <aside class="notes" data-markdown>
+          - Data narrows CR down to proton or heavy nucleus, i.e. C, Si, Fe.
+          - Direction is close to galactic ring -> large magnetic field -> large deflection
+          - Previous TA measurements >100 EeV (Fig. 3) do not cluster around this event, suggesting they come from a
+          different source
+          - Stronger magnetic fields? BSM physics? Impossible to distinguish
+        </aside>
+      </section>
+
+      <section>
+        <h3>Possible Sources</h3>
+        <ul style="white-space: pre-line; font-size: 30px">
+          <li>Possible galactic CR source only 2.5° away, but ~600Mpc -> too far away</li>
+          <li>Max propagation for 244 EeV is ~30 Mpc for all primary possibilities</li>
+          <li>Distance to nearest UHECR source:
+            <ul>
+              <li>If iron, D = 10.3+5.3-3.0 Mpc</li>
+              <li>If proton, D = 27.0+3.8-3.0 Mpc</li>
+            </ul>
+        </ul>
+        <aside class="notes" data-markdown>
+          - Possible galactic CR source only 2.5\degree away, however ~600Mpc -> too far away
+          - Max propogation for 244 EeV is ~30 Mpc for all primary possibilities
+          - Figure 2 shows iron CR flux from local large scale structure.
+          - Local Void - cavity between the Local Group of galaxies and nearby LSS filaments
+          - Void has no known candidate source galaxies, even in range of all possible trajectories
+        </aside>
+      </section>
+
+      <section>
+        <h3>Possible Explanations?</h3>
+        <ul style="white-space: pre-line; font-size: 30px">
+          <li>Observational error, misinterpreting data</li>
+          <li>Local sources within GZK horizon (but where?)</li>
+          <li>CRs are heavier nuclei than protons, GZK limit is higher</li>
+          <li>Incorrect modelling of galactic magnetic field (GMF)</li>
+          <li>A high-energy neutrino produced a proton locally by interaction with anti-neutrino</li>
+          <li>Loop quantum gravity theory can predict higher GZK energy cutoff</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>Summary</h3>
+        <ul style="white-space: pre-line; font-size: 30px">
+          <li>The GZK limit should be a strict upper limit on CR energies</li>
+          <li>Several UHECRs have been observed which violate this limit</li>
+          <li>Opportunity to learn more about GMF, particle and BSM physics</li>
+        </ul>
+      </section>
+    </div>
+  </div>
+
+  <script src="dist/reveal.js"></script>
+  <script src="plugin/notes/notes.js"></script>
+  <script src="plugin/markdown/markdown.js"></script>
+  <script src="plugin/highlight/highlight.js"></script>
+  <script src="plugin/math/math.js"></script>
+  <script>
+    Reveal.initialize({
+      plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX],
+      hash: true,
+      transition: 'slide',
+      controls: false,
+      progress: true,
+      slideNumber: true
+    });
+  </script>
+</body>
+
+</html>
