@@ -1,0 +1,356 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, 
+                                         initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>The neutrino fog for dark matter-electron scattering experiments</title>
+    <meta name="author" content="Ben Carew">
+
+    <link rel="stylesheet" href="dist/reset.css">
+    <link rel="stylesheet" href="dist/reveal.css">
+    <link rel="stylesheet" href="dist/theme/serif.css">
+    <link rel="stylesheet" href="plugin/highlight/monokai.css">
+    <style>
+        .flex-container {
+            display: flex;
+            flex-direction: row;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+
+            <section>
+                <h2>Event Reconstruction for Hyper-Kamiokande</h2>
+                <p>Ben Carew - EDPIF Interview - 3/6/25</p>
+            </section>
+
+            <section>
+                <h3>Light WIMP Detection and the Neutrino Fog</h3>
+                <img src="media/UQ_logo.png" style="height: 80px; padding: 40px; border-radius:20px;">
+                <img src="media/USyd_logo.png" style="height: 80px; padding: 40px; border-radius:20px;">
+                <p style="font-size: 30px; padding: 10px;">Supervisor: Dr Ciaran O'Hare</p>
+                <p style="font-size: 30px; color: rgb(31, 31, 31); padding: 10px;">PhysRevD.109.083016</p>
+            </section>
+
+            <section>
+                <section>
+                    <h3>The Problem with Direct Detection</h3>
+                    <div style="background-color: #FFFFFF; opacity: 1.0;
+                                        border-radius: 30px; padding: 0px">
+                        <div class="r-hstack">
+                            <img src="figures/nu_floor.png" style="width: 1000px;padding: 10px">
+                            <ul style="font-size:30px; padding:5px; line-height:140%;">
+                                <li style="color:black;">Future experiments will face an irreducible neutrino background
+                                </li>
+                                <li style="color:black;">Cannot be overcome with improved shielding, purification or
+                                    design</li>
+                                <li style="color:black;">The current generation of detectors are expected to detect
+                                    neutrino nuclear recoils within a few years</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h3>Electron recoil signals</h3>
+                    <div class="r-hstack">
+                        <div class="r-vstack">
+                            <img src="figures/DMn_limit.png" style="height:49%; 
+                                                              background: transparent;border-radius:20px">
+                            <p style="font-size:35px; color:black">DM $\leftrightarrow$ Nucleus</p>
+                            <ul style="font-size:25px; color:black">
+                                <li>$m_\chi \gtrsim 1$ GeV</li>
+                                <li>Main focus of most current detectors</li>
+                                <li>Limits down to $\sigma \sim 10^{-46}$</li>
+                            </ul>
+                        </div>
+                        <div class="r-vstack">
+                            <img src="figures/DM_limit.png" data-lazy-loaded="" style="height: 49%;
+                                                            background: transparent; border-radius:20px">
+                            <p style="font-size:35px;color:black;">DM $\leftrightarrow$ Electrons</p>
+                            <ul style="font-size:25px; color:black;">
+                                <li>$m_\chi \lesssim 1$ GeV</li>
+                                <li>Few experiments capable of measuring</li>
+                                <li>Limits are much weaker</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h3>Solids, Liquids and Gasses</h3>
+                    <div style="display:flex; justify-content:space-between; align-items:center;">
+                        <figure style="text-align:center; flex:1; padding:10px">
+                            <img src="media/SENSEI.png" alt="Image 1"
+                                style="object-fit:cover; width: 320px; height: 320px; border-radius:20px">
+                            <figcaption style="flex: 1; font-size:20pt;">Semiconductor ionisation detectors
+                            </figcaption>
+                        </figure>
+                        <figure style="text-align:center; flex:1;padding:10px">
+                            <img src="figures/detector_final.png" alt="Image 2"
+                                style="object-fit:cover; width: 300px; height: 340px;">
+                            <figcaption style="flex: 1; font-size:20pt;">Noble liquid time-projection chambers
+                            </figcaption>
+                        </figure>
+                        <figure style="text-align:center; flex:1; padding:10px">
+                            <img src="media/NEWS-G.png" alt="Image 3"
+                                style="object-fit:cover; width: 320px; height: 320px; border-radius:20px">
+                            <figcaption style="flex: 1; font-size:20pt;">Spherical proportion counters</figcaption>
+                        </figure>
+                    </div>
+                </section>
+
+
+                <section>
+                    <h3>Solar neutrino rates</h3>
+                    <div class="r-hstack">
+                        <img src="figures/NuFlux.png" style="height:350px; padding:10px">
+                        <img src="figures/nu_dR_All.png" style="height:350px; padding:10px">
+                    </div>
+                    <ul style="font-size:25px">
+                        <li>$pp$ has largest flux, dominates $\nu$-$e$ signal.</li>
+                        <li>$hep$ and $^8B$ have highest energy, dominates $\nu$-nucleus signal.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <video id="atom" controls="" data-autoplay="" loop="" style=""
+                        onclick="this.paused ? this.play() : this.pause();" data-paused-by-reveal="">
+                        <source type="video/mp4" src="media/DMbounce.mp4" data-lazy-loaded="">
+                    </video>
+                    <script>
+                        var vid = document.getElementById("atom");
+                        vid.playbackRate = 0.75;
+                    </script>
+                </section>
+            </section>
+
+            <section data-auto-animate>
+                <h3> Atomic Form Factor</h3>
+                <div data-id="K" style="font-size:40px">
+                    \[K_{njl} = E_H \sum_{\textcolor{orange}{m}} \sum_{\textcolor{blue}{f}}
+                    |\textcolor{blue}{\bra{f}}e^{iq\cdot r}\textcolor{orange}{\ket{njlm}}|^2 \rho_f(E)\]
+                </div>
+            </section>
+
+
+            <section data-auto-animate>
+                <h3> Atomic Form Factor</h3>
+                <div data-id="K" style="font-size:40px">
+                    \[K_{njl} = E_H \sum_{\textcolor{orange}{m}} \sum_{\textcolor{blue}{f}}
+                    |\textcolor{blue}{\bra{f}}e^{iq\cdot r}\textcolor{orange}{\ket{njlm}}|^2 \rho_f(E)\]
+                </div>
+                <div class="r-hstack">
+
+                    <ul style="font-size:30px">
+                        <li>
+                            <font color="orange">Electron wavefunctions</font> must be calculated relativistically
+                        </li>
+                        <li>Cannot approximate <font color="blue">final state electron</font> as a plane wave</li>
+                        <li>Requires accurate atomic physics methods</li>
+                    </ul>
+                    <img src="figures/AKq.png" style="border-radius:20px">
+                </div>
+            </section>
+
+            <section>
+                <h3>Dark Matter Event Rates</h3>
+                <div class="r-hstack" style="background-color: #FFFFFF; opacity: 1.0;
+                                        border-radius: 30px; padding: 0px; color:black; font-size:30px">
+                    <figure>
+                        <img src="figures/Rates_Silicon.png" style="">
+                    </figure>
+                    <figure>
+                        <img src="figures/Rates_Xenon.png" style="">
+                    </figure>
+                    <!-- <figure> -->
+                    <!-- <img src="figures/DMrate_Iso.png" style=""> -->
+                    <!--     <figcaption>Isobutane</figcaption> -->
+                    <!-- </figure> -->
+                </div>
+                <div style="font-size:20pt">
+                    \[\frac{\mathrm{d}R_{\chi}}{\mathrm{d}E} =
+                    \frac{n_T\textcolor{blue}{\rho_{DM}}}{\textcolor{orange}{m_\chi}
+                    c^2}\frac{\textcolor{green}{\overline{\sigma}_e}}{2m_e c} \int
+                    \mathrm{d}v\textcolor{blue}{\frac{f(v)}{v/c}} \int_{q_-}^{q_+} a_0^2 q\mathrm{d}q
+                    \textcolor{orange}{\left|F^\mu_\chi (q)\right|^2}\textcolor{purple}{K(E,q)}\]
+                </div>
+            </section>
+
+            <section>
+                <section data-auto-animate>
+                    <h3>Quantifying the Fog</h3>
+                    <img src="figures/NuFog_1D_Silicon.png" style="height: 500px; border-radius:20px">
+                </section>
+
+
+                <section data-auto-animate>
+                    <h3>Quantifying the Fog</h3>
+                    <!-- \[n=-\left(\frac{\mathrm{d}\ln{\textcolor{blue}{\sigma}}}{\mathrm{d}\ln{\textcolor{orange}{N}}}\right)^{-1}\] -->
+                    \[\textcolor{blue}{\sigma} \propto \textcolor{orange}{N}^{-1/\textcolor{green}{n}}\]
+                    <p style="font-size:20pt">i.e. How does the discovery limit decrease with the exposure?</p>
+                    <p>
+                        <font color="blue">\(\sigma=\) the discovery limit</font>
+                    </p>
+                    <p>
+                        <font color="orange">\(N=\) the number of background events</font>
+                    </p>
+                    <p class="r-frame">\(\textcolor{green}{n}=2 \Rightarrow\) Poissonian background subtraction</p>
+                </section>
+
+                <section>
+                    <div class="r-hstack">
+                        <div style="font-size:20pt" class="r-vstack">
+                            <p>If you're driving your car and you run into some fog, what do you do?</p>
+                            <p class="fragment fade-in" data-fragment-index="1">Do you stop, turn around and drive
+                                home?
+                            </p>
+                            <h1 class="fragment fade-in" data-fragment-index="2">
+                                <font color="red">No!</font>
+                            </h1>
+                            <p class="fragment fade-in" data-fragment-index="3">You apply for funding for brighter
+                                spotlights and you keep driving.</p>
+                        </div>
+                        <div style="padding:20px"></div>
+                        <div class="r-stack">
+                            <img src="media/dim_fog.jpg" class="fragment fade-out" data-fragment-index="3">
+                            <img src="media/bright_fog.jpg" class="fragment fade-in" data-fragment-index="3">
+                        </div>
+                </section>
+            </section>
+
+            <section>
+                <section data-auto-animate>
+                    <h3>Electron Recoil Neutrino Fogs</h3>
+                    <div class="r-hstack">
+                        <div>
+                            <img src="figures/NuFog_2D_Si_HeavyMediator.png" style="border-radius:10px">
+                            <p>Silicon</p>
+                        </div>
+                        <div>
+                            <img src="figures/NuFog_2D_Xe_HeavyMediator.png" style="border-radius:10px">
+                            <p>Xenon</p>
+                        </div>
+                        <div>
+                            <img src="figures/NuFog_2D_Neon_HeavyMediator.png" style="border-radius:10px">
+                            <p>Neon</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Silicon</h3>
+                        <img src="figures/NuFog_2D_Si_HeavyMediator.png" style="height: 500px; border-radius:20px">
+                </section>
+
+
+                <section>
+                    <h2>Liquid Xenon</h3>
+                        <div>
+                            <img src="figures/NuFog_2D_Xe_HeavyMediator.png" style="height: 500px; border-radius:20px">
+                        </div>
+                </section>
+
+
+                <section data-auto-animate>
+                    <h2>Neon Gas</h3>
+                        <div>
+                            <img src="figures/NuFog_2D_Neon_HeavyMediator.png"
+                                style="height: 500px; border-radius:20px">
+                        </div>
+                </section>
+
+
+
+                <section>
+                    <h3>Neutrino Fog for Nuclear Recoils</h3>
+                    <img src="figures/NuFloor_Wide_axis.png" style="height: 500px; border-radius:20px">
+                </section>
+            </section>
+
+            <section>
+                <section>
+                    <h3>Summary</h3>
+                    <div class="r-hstack">
+                        <div>
+                            <img src="figures/NuFog_Combined_HeavyMediator.png" style="border-radius:10px">
+                        </div>
+                        <div>
+                            <img src="figures/NuFog_Combined_LightMediator.png" style="border-radius:10px">
+                        </div>
+                    </div>
+                </section>
+
+                <section data-auto-animate>
+                    <h3>Solutions</h3>
+                    <div style="display:flex; justify-content:space-between; align-items:center;">
+                        <figure style="text-align:center; flex:1;">
+                            <img src="media/Halo.png" alt="Image 4"
+                                style="width: 400px; height: 320px; border-radius:20px">
+                            <figcaption style="flex: 1; font-size:20pt;">Directional detection</figcaption>
+                        </figure>
+                        <figure style="text-align:center; flex:1;">
+                            <img src="figures/reduce_uncert.png" alt="Image 4"
+                                style="width: 400px; height: 320px; border-radius:20px">
+                            <figcaption style="flex: 1; font-size:20pt;">Reduce neutrino flux uncertainties</figcaption>
+                        </figure>
+                    </div>
+                </section>
+            </section>
+
+            <section>
+                <h3>Event Reconstruction of the Hyper-Kamiokande Detector</h3>
+                <img src="PhD_images/LPNHE.jpg" style="height: 100px; padding: 20px; border-radius:20px;">
+                <img src="PhD_images/HyperK.png" style="height: 100px; padding: 20px; border-radius:20px;">
+                <p style="font-size: 30px; padding: 10px;">Supervisors: Dr Vladimir Gligorov and Dr Mathieu Gigue</p>
+            </section>
+
+            <section data-auto-animate>
+                <h3>Scattered Light Table</h3>
+                <div class="r-vstack">
+                    <div data-id="A" style="font-size:40px">
+                        \[A(\textcolor{orange}{s}) = A(\textcolor{blue}{x_{\text{PMT}}, z_{{vtx}}, R_{{vtx}}, \varphi,
+                        \theta, \phi}) =
+                        \frac{\mathrm{d}\mu^{\text{sct}}}{\mathrm{d}\mu^{\text{iso,sct}}}\]
+                    </div>
+                    <div class="r-hstack">
+                        <ul style="font-size:30px">
+                            <li>Accounts for light scattered in water and reflected</li>
+                            <li>Table requires computationally taxing <font color='blue'>6D</font> interpolation at each
+                                point \(\textcolor{orange}{s}\) along the
+                                track</li>
+                            <li>Optimisable by studying the structure
+                            </li>
+                        </ul>
+                        <img src="PhD_images/6D diagram.png" style="width: 600px; padding: 0px; border-radius:20px">
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script src="plugin/math/math.js"></script>
+    <script>
+        Reveal.initialize({
+            hash: true,
+            plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX],
+            transition: 'slide',
+            controls: false,
+            progress: false
+        });    
+    </script>
+</body>
+
+</html>
