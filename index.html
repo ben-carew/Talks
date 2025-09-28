@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, 
                                          initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <title>The neutrino fog for dark matter-electron scattering experiments</title>
+    <title>IMAPP Thesis Defense</title>
     <meta name="author" content="Ben Carew">
 
     <link rel="stylesheet" href="dist/reset.css">
@@ -26,320 +26,15 @@
         <div class="slides">
 
             <section>
-                <h2>Event Reconstruction for Hyper-Kamiokande</h2>
-                <img src="PhD_images/event.jpg" style="width: 300px; padding: 0px 0px 0px 30px; border-radius:0px">
-                <p>Ben Carew - EDPIF Interview - 3/6/25</p>
-            </section>
-
-            <section>
-                <h3>Research Experience</h3>
-                <ul style="font-size: 30px; padding: 10px; line-height: 140%;">
-                    <li>
-                        <b>Honour's Thesis:</b> Atomic Ionisation with Electron Interactions of Dark
-                        Matter
-                        <ul style="font-size: 25px; padding: 15px 0px 40px 0px; line-height: 50%;">
-                            <li style="font-size: 25px;">University of Queensland, Australia, July 2021 - July 2022</li>
-                        </ul>
-                    </li>
-                    <li><b>Postgraduate Research Assistant:</b> The Neutrino Fog for Dark Matter Electron Scattering
-                        Experiments</li>
-                    <ul style="font-size: 25px; padding: 15px 0px 40px 0px; line-height: 50%;">
-                        <li style="font-size: 25px;">University of Sydney, Australia, November 2022 - August 2023</li>
-                    </ul>
-                    <li><b>Master's Thesis:</b> Event Reconstruction for the Hyper-Kamiokande Neutrino Detector</li>
-                    <ul style="font-size: 25px; padding: 15px 0px 40px 0px; line-height: 50%;">
-                        <li style="font-size: 25px;">LPNHE, France, March 2025 - September 2025</li>
-                    </ul>
-                </ul>
-            </section>
-
-            <section>
-                <h3>Light WIMP Detection and the Neutrino Fog</h3>
-                <img src="media/UQ_logo.png" style="height: 80px; padding: 40px; border-radius:20px;">
-                <img src="media/USyd_logo.png" style="height: 80px; padding: 40px; border-radius:20px;">
-                <p style="font-size: 30px; padding: 10px;">Supervisors: Dr Benjamin Roberts and Dr Ciaran O'Hare</p>
-            </section>
-
-            <section>
-                <section>
-                    <h3>The Problem with Direct Detection</h3>
-                    <div style="background-color: #FFFFFF; opacity: 1.0;
-                                        border-radius: 30px; padding: 0px">
-                        <div class="r-hstack">
-                            <img src="figures/nu_floor.png" style="width: 1000px;padding: 10px">
-                            <ul style="font-size:30px; padding:5px; line-height:140%;">
-                                <li style="color:black;">Future experiments will face an <b>irreducible</b> neutrino
-                                    background
-                                </li>
-                                <li style="color:black;">Cannot be overcome with improved shielding, purification or
-                                    design</li>
-                                <li style="color:black;">Evidence of neutrino nuclear recoils has <b>already</b> been
-                                    detected
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-
-                <section>
-                    <h3>Electron recoil signals</h3>
-                    <div class="r-hstack">
-                        <div class="r-vstack">
-                            <img src="figures/DMn_limit.png" style="height:49%; 
-                                                              background: transparent;border-radius:20px">
-                            <p style="font-size:35px; color:black">DM $\leftrightarrow$ Nucleus</p>
-                            <ul style="font-size:25px; color:black">
-                                <li>$m_\chi \gtrsim 1$ GeV</li>
-                                <li>Main focus of most current detectors</li>
-                                <li>Limits down to $\sigma \sim 10^{-46}$</li>
-                            </ul>
-                        </div>
-                        <div class="r-vstack">
-                            <img src="figures/DM_limit.png" data-lazy-loaded="" style="height: 49%;
-                                                            background: transparent; border-radius:20px">
-                            <p style="font-size:35px;color:black;">DM $\leftrightarrow$ Electrons</p>
-                            <ul style="font-size:25px; color:black;">
-                                <li>$m_\chi \lesssim 1$ GeV</li>
-                                <li>Few experiments capable of measuring</li>
-                                <li>Limits are much weaker</li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-
-                <section>
-                    <h3>Solids, Liquids and Gasses</h3>
-                    <div style="display:flex; justify-content:space-between; align-items:center;">
-                        <figure style="text-align:center; flex:1; padding:10px">
-                            <img src="media/SENSEI.png" alt="Image 1"
-                                style="object-fit:cover; width: 320px; height: 320px; border-radius:20px">
-                            <figcaption style="flex: 1; font-size:20pt;">Semiconductor ionisation detectors
-                            </figcaption>
-                        </figure>
-                        <figure style="text-align:center; flex:1;padding:10px">
-                            <img src="figures/detector_final.png" alt="Image 2"
-                                style="object-fit:cover; width: 300px; height: 340px;">
-                            <figcaption style="flex: 1; font-size:20pt;">Noble liquid time-projection chambers
-                            </figcaption>
-                        </figure>
-                        <figure style="text-align:center; flex:1; padding:10px">
-                            <img src="media/NEWS-G.png" alt="Image 3"
-                                style="object-fit:cover; width: 320px; height: 320px; border-radius:20px">
-                            <figcaption style="flex: 1; font-size:20pt;">Spherical proportion counters</figcaption>
-                        </figure>
-                    </div>
-                </section>
-
-
-                <section>
-                    <h3>Solar neutrino rates</h3>
-                    <div class="r-hstack">
-                        <img src="figures/NuFlux.png" style="height:350px; padding:10px">
-                        <img src="figures/nu_dR_All.png" style="height:350px; padding:10px">
-                    </div>
-                    <ul style="font-size:25px">
-                        <li>$pp$ has largest flux, dominates $\nu$-$e$ signal.</li>
-                        <li>$hep$ and $^8B$ have highest energy, dominates $\nu$-nucleus signal.</li>
-                    </ul>
-                </section>
-
-                <section>
-                    <video id="atom" controls="" data-autoplay="" loop="" style=""
-                        onclick="this.paused ? this.play() : this.pause();" data-paused-by-reveal="">
-                        <source type="video/mp4" src="media/DMbounce.mp4" data-lazy-loaded="">
-                    </video>
-                    <script>
-                        var vid = document.getElementById("atom");
-                        vid.playbackRate = 0.75;
-                    </script>
-                </section>
-
-                <section data-auto-animate>
-                    <h3> Atomic Form Factor</h3>
-                    <div data-id="K" style="font-size:40px">
-                        \[K_{njl} = E_H \sum_{\textcolor{orange}{m}} \sum_{\textcolor{blue}{f}}
-                        |\textcolor{blue}{\bra{f}}e^{iq\cdot r}\textcolor{orange}{\ket{njlm}}|^2 \rho_f(E)\]
-                    </div>
-                </section>
-
-                <section data-auto-animate>
-                    <h3> Atomic Form Factor</h3>
-                    <div data-id="K" style="font-size:40px">
-                        \[K_{njl} = E_H \sum_{\textcolor{orange}{m}} \sum_{\textcolor{blue}{f}}
-                        |\textcolor{blue}{\bra{f}}e^{iq\cdot r}\textcolor{orange}{\ket{njlm}}|^2 \rho_f(E)\]
-                    </div>
-                    <div class="r-hstack">
-
-                        <ul style="font-size:30px">
-                            <li>
-                                <font color="orange">Electron wavefunctions</font> must be calculated relativistically
-                            </li>
-                            <li>Cannot approximate <font color="blue">final state electron</font> as a plane wave</li>
-                            <li>Requires accurate atomic physics methods</li>
-                        </ul>
-                        <img src="figures/AKq.png" style="border-radius:20px">
-                    </div>
-                </section>
-            </section>
-            <section>
-                <section>
-                    <h3>Event Rates</h3>
-                    <img src="figures/Rates_Xenon.png" style="height:500px; border-radius:20px">
-                </section>
-                <section>
-                    <h3>Dark Matter Event Rates</h3>
-                    <div class="r-hstack" style="background-color: #FFFFFF; opacity: 1.0;
-                                        border-radius: 30px; padding: 0px; color:black; font-size:30px">
-                        <figure>
-                            <img src="figures/Rates_Silicon.png" style="">
-                        </figure>
-                        <figure>
-                            <img src="figures/Rates_Xenon.png" style="">
-                        </figure>
-                        <!-- <figure> -->
-                        <!-- <img src="figures/DMrate_Iso.png" style=""> -->
-                        <!--     <figcaption>Isobutane</figcaption> -->
-                        <!-- </figure> -->
-                    </div>
-                    <div style="font-size:20pt">
-                        \[\frac{\mathrm{d}R_{\chi}}{\mathrm{d}E} =
-                        \frac{n_T\textcolor{blue}{\rho_{DM}}}{\textcolor{orange}{m_\chi}
-                        c^2}\frac{\textcolor{green}{\overline{\sigma}_e}}{2m_e c} \int
-                        \mathrm{d}v\textcolor{blue}{\frac{f(v)}{v/c}} \int_{q_-}^{q_+} a_0^2 q\mathrm{d}q
-                        \textcolor{orange}{\left|F^\mu_\chi (q)\right|^2}\textcolor{purple}{K(E,q)}\]
-                    </div>
-                </section>
-
-                <section data-auto-animate>
-                    <h3>Quantifying the Fog</h3>
-                    <img src="figures/NuFog_1D_Silicon.png" style="height: 500px; border-radius:20px">
-                </section>
-
-
-                <section data-auto-animate>
-                    <h3>Quantifying the Fog</h3>
-                    <!-- \[n=-\left(\frac{\mathrm{d}\ln{\textcolor{blue}{\sigma}}}{\mathrm{d}\ln{\textcolor{orange}{N}}}\right)^{-1}\] -->
-                    \[\textcolor{blue}{\sigma} \propto \textcolor{orange}{N}^{-1/\textcolor{green}{n}}\]
-                    <p style="font-size:20pt">i.e. How does the discovery limit decrease with the exposure?</p>
-                    <p>
-                        <font color="blue">\(\sigma=\) the discovery limit</font>
-                    </p>
-                    <p>
-                        <font color="orange">\(N=\) the number of background events</font>
-                    </p>
-                    <p class="r-frame">\(\textcolor{green}{n}=2 \Rightarrow\) Poissonian background subtraction</p>
-                </section>
-
-                <section>
-                    <div class="r-hstack">
-                        <div style="font-size:20pt" class="r-vstack">
-                            <p>If you're driving your car and you run into some fog, what do you do?</p>
-                            <p class="fragment fade-in" data-fragment-index="1">Do you stop, turn around and drive
-                                home?
-                            </p>
-                            <h1 class="fragment fade-in" data-fragment-index="2">
-                                <font color="red">No!</font>
-                            </h1>
-                            <p class="fragment fade-in" data-fragment-index="3">You apply for funding for brighter
-                                spotlights and you keep driving.</p>
-                        </div>
-                        <div style="padding:20px"></div>
-                        <div class="r-stack">
-                            <img src="media/dim_fog.jpg" class="fragment fade-out" data-fragment-index="3">
-                            <img src="media/bright_fog.jpg" class="fragment fade-in" data-fragment-index="3">
-                        </div>
-                </section>
-
-            </section>
-            <section>
-                <section>
-                    <h3>Electron Recoil Neutrino Fogs</h3>
-                    <div class="r-hstack">
-                        <div>
-                            <img src="figures/NuFog_2D_Si_HeavyMediator.png" style="border-radius:10px">
-                            <p>Silicon</p>
-                        </div>
-                        <div>
-                            <img src="figures/NuFog_2D_Xe_HeavyMediator.png" style="border-radius:10px">
-                            <p>Xenon</p>
-                        </div>
-                        <div>
-                            <img src="figures/NuFog_2D_Neon_HeavyMediator.png" style="border-radius:10px">
-                            <p>Neon</p>
-                        </div>
-                    </div>
-                </section>
-
-                <section>
-                    <h2>Silicon</h3>
-                        <img src="figures/NuFog_2D_Si_HeavyMediator.png" style="height: 500px; border-radius:20px">
-                </section>
-
-
-                <section>
-                    <h2>Liquid Xenon</h3>
-                        <div>
-                            <img src="figures/NuFog_2D_Xe_HeavyMediator.png" style="height: 500px; border-radius:20px">
-                        </div>
-                </section>
-
-
-                <section data-auto-animate>
-                    <h2>Neon Gas</h3>
-                        <div>
-                            <img src="figures/NuFog_2D_Neon_HeavyMediator.png"
-                                style="height: 500px; border-radius:20px">
-                        </div>
-                </section>
-
-
-
-                <section>
-                    <h3>Neutrino Fog for Nuclear Recoils</h3>
-                    <img src="figures/NuFloor_Wide_axis.png" style="height: 500px; border-radius:20px">
-                </section>
-            </section>
-
-            <section>
-                <section>
-                    <h3>Summary</h3>
-                    <div class="r-hstack">
-                        <div>
-                            <img src="figures/NuFog_Combined_HeavyMediator.png" style="border-radius:10px">
-                        </div>
-                        <div>
-                            <img src="figures/NuFog_Combined_LightMediator.png" style="border-radius:10px">
-                        </div>
-                    </div>
-                    <p style="font-size: 20pt">Results published in PhysRevD.109.083016</p>
-                </section>
-
-                <section data-auto-animate>
-                    <h3>Solutions</h3>
-                    <div style="display:flex; justify-content:space-between; align-items:center;">
-                        <figure style="text-align:center; flex:1;">
-                            <img src="media/Halo.png" alt="Image 4"
-                                style="width: 400px; height: 320px; border-radius:20px">
-                            <figcaption style="flex: 1; font-size:20pt;">Directional detection</figcaption>
-                        </figure>
-                        <figure style="text-align:center; flex:1;">
-                            <img src="figures/reduce_uncert.png" alt="Image 4"
-                                style="width: 400px; height: 320px; border-radius:20px">
-                            <figcaption style="flex: 1; font-size:20pt;">Reduce neutrino flux uncertainties</figcaption>
-                        </figure>
-                    </div>
-                </section>
-            </section>
-
-            <section>
                 <h3>Event Reconstruction of the Hyper-Kamiokande Detector</h3>
                 <img src="PhD_images/LPNHE.jpg" style="height: 100px; padding: 20px; border-radius:40px;">
                 <img src="PhD_images/HyperK.png" style="height: 100px; padding: 20px; border-radius:40px;">
+                <p style="font-size: 30px; padding: 10px;">Ben Carew - IMAPP - 29/09/25</p>
                 <p style="font-size: 30px; padding: 10px;">Supervisors: Dr Vladimir Gligorov and Dr Mathieu Guigue</p>
             </section>
 
-            <section>
-                <h3>Hyper-Kamiokande</h3>
+            <section data-auto-animate>
+                <h4>Hyper-Kamiokande</h4>
                 <div class="r-hstack">
                     <figure>
                         <img src="PhD_images/hyperk.jpg"
@@ -355,9 +50,14 @@
                 </div>
             </section>
 
+            <section data-auto-animate>
+                <h4>Hyper-Kamiokande</h4>
+                <img src="PhD_images/Schedule.png" style="padding: 0px; border-radius:20px;">
+            </section>
+
             <section>
                 <section data-auto-animate>
-                    <h3>Motivation</h3>
+                    <h4>Motivation</h4>
                     <div class="r-hstack">
                         <img src="PhD_images/HK_sens.png"
                             style="width: 1500px; padding: 0px 0px 0px 0px; border-radius:20px">
@@ -368,14 +68,14 @@
                         </ul>
                 </section>
                 <section>
-                    <h3>Unitarity</h3>
+                    <h4>Unitarity</h4>
                     <img src="PhD_images/unitarity.png"
                         style="height: 500px; padding: 0px 0px 0px 0px; border-radius:0px">
                 </section>
             </section>
 
             <section data-auto-animate>
-                <h3>Motivation</h3>
+                <h4>Motivation</h4>
                 <div class="r-vstack">
                     <div class="r-hstack">
                         <ul style="font-size:25px; padding:10px; line-height:120%;">
@@ -400,80 +100,194 @@
                 </div>
             </section>
 
-            <section>
-                <h3>Scattered Light Table</h3>
+            <section data-auto-animate>
+                <h4>Scattered Light Table</h4>
                 <div class="r-vstack">
-                    <!--  <div data-id="A" style="font-size:40px">
-                        \[A(\textcolor{orange}{s}) = A(\textcolor{blue}{x_{\text{PMT}}, z_{{vtx}}, R_{{vtx}}, \varphi,
+                    <div data-id="A" style="font-size:40px">
+                        \[A(\textcolor{orange}{s}) = A(\textcolor{blue}{x_{\text{PMT}}, z_{\text{vtx}}, R_{\text{vtx}},
+                        \varphi,
                         \theta, \phi}) =
                         \frac{\mathrm{d}\textcolor{green}{\mu}^{\text{sct}}}{\mathrm{d}\textcolor{green}{\mu}^{\text{iso,sct}}}\]
-                    </div>-->
-                    <img src="PhD_images/scattering.png" style="border-radius:20px">
-                    <ul style="font-size:30px">
-                        <p>~ 35% of total runtime</p>
-                    </ul>
+                    </div>
+                    <div class="r-hstack">
+                        <ul style="font-size:30px">
+                            <li>Accounts for <font color='green'>predicted charge</font> from light scattered in water
+                                and reflected</li>
+                            <li>Table requires computationally taxing <font color='blue'>6D</font> interpolation at each
+                                point \(\textcolor{orange}{s}\) along the
+                                track - ~35% of total runtime</li>
+                            <li>Optimisable by studying the physics behind the table's structure
+                            </li>
+                        </ul>
+                        <img src="PhD_images/6D diagram.png"
+                            style="width: 800px; padding: 0px 0px 0px 50px; border-radius:0px">
+                    </div>
                 </div>
             </section>
 
             <section data-auto-animate>
-                <h3>Approach 1: Gradient Threshold</h3>
+                <h4>Scattered Light Table</h4>
+                <img src="PhD_images/scattering.png" style="border-radius:20px">
+            </section>
+
+            <section data-auto-animate>
+                <h4>Scattered Light Table</h4>
+                <img src="PhD_images/Figures/scattering_table_projections_lorenzo-1.png" style="border-radius:20px">
+            </section>
+
+            <section data-auto-animate>
+                <h4>Scattered Light Table</h4>
+                <img src="PhD_images/Figures/scattering_table_projections_lorenzo-4.png" style="border-radius:20px">
+            </section>
+
+            <section data-auto-animate>
+                <h4>Gradient Threshold Optimisation</h4>
+                <div class="r-hstack">
+                    <img src="PhD_images/Figures/gradthresh_explain.png"
+                        style="height: 500px; padding: 0px 20px 0px 0px; border-radius:0px">
+                    <ul style="font-size:30px; padding:10px; line-height:140%;">
+                        <li>Calculate 6D gradient between each table value</li>
+                        <li>Apply a threshold:
+                            <ul style="font-size:25px; padding: 15px 0px 20px 0px; line-height: 100%;">
+                                <li>Above -> interpolate</li>
+                                <li>Below -> nearest neighbour</li>
+                            </ul>
+                        </li>
+                        <li>Find highest threshold value before error becomes large</li>
+                    </ul>
+            </section>
+
+            <section data-auto-animate>
+                <h4>Gradient Threshold Optimisation</h4>
                 <img src="PhD_images/2D_gradient.png" style="height: 500px; border-radius:20px">
             </section>
 
             <section data-auto-animate>
-                <section data-auto-animate>
-                    <h3>Approach 1: Gradient Threshold</h3>
+                <h4>Gradient Threshold Results</h4>
+                <div class="r-hstack">
+                    <img src="PhD_images/grad_NNperc.png"
+                        style="height: 500px; padding: 5px 5px 5px 5px; border: radius 10px">
                     <img src="PhD_images/grad_time.png"
-                        style="height: 500px; padding: 0px 0px 0px 0px; border-radius:0px">
-                </section>
-                <section>
-                    <img src="PhD_images/grad_p_error.png" style=" padding: 0px 0px 0px 0px; border-radius:0px">
-                </section>
-                <section>
-                    <img src="PhD_images/grad_NNperc.png" style="padding: 0px 0px 0px 0px; border-radius:0px">
-                </section>
+                        style="height: 500px; padding: 5px 5px 5px 5px; border-radius:10px">
+                </div>
             </section>
 
             <section data-auto-animate>
-                <h3>Approach 2: Parametrisation</h3>
+                <h4>Gradient Threshold Results</h4>
+                <div class="r-hstack">
+                    <img src="PhD_images/Figures/grad_p_error.png"
+                        style="height: 500px; padding: 5px 5px 5px 5px; border: radius 10px">
+                    <img src="PhD_images/Figures/plot_momentum_4hist.png"
+                        style="height: 500px; padding: 5px 5px 5px 5px; border-radius:10px">
+                </div>
+            </section>
+
+            <section data-auto-animate>
+                <h4>Parametrisation Optimisation</h4>
                 <div class="r-hstack">
                     <img src="PhD_images/parametrisation.png"
                         style="width:1500px; padding: 0px 20px 0px 0px; border-radius:0px">
                     <ul style="font-size:30px; padding:10px; line-height:140%;">
                         <li>Regions of the scattering table can be well-fit by analytical functions</li>
-                        <li>Use physically-motivated relationships between dimensions to reduce interpolation complexity
+                        <li>Use physically-motivated relationships between dimensions to reduce interpolation
+                            complexity
                         </li>
                     </ul>
                 </div>
             </section>
 
             <section data-auto-animate>
-                <h3>Approach 2: Parametrisation</h3>
                 <img src="PhD_images/1DNN.png" style="height: 500px; padding: 0px 10px 0px 0px; border-radius:0px">
             </section>
 
             <section data-auto-animate>
-                <h3>Approach 2: Parametrisation</h3>
                 <img src="PhD_images/correction.png"
                     style="height: 500px; padding: 0px 10px 0px 10px; border-radius:0px">
             </section>
 
             <section data-auto-animate>
-                <h3>Approach 2: Parametrisation</h3>
                 <img src="PhD_images/corrected.png"
                     style="height: 500px; padding: 0px 10px 0px 10px; border-radius:0px">
             </section>
 
-            <section>
-                <h3>Doctoral Thesis Project:</h3>
-                <h4>Hyper-Kamiokande Event Reconstruction and Phenomenological Analysis</h4>
-                <img src="PhD_images/LPNHE.jpg" style="height: 100px; padding: 20px; border-radius:40px;">
-                <img src="PhD_images/HyperK.png" style="height: 100px; padding: 20px; border-radius:40px;">
-                <p style="font-size: 30px; padding: 10px;">Supervisor: Dr Vladimir Gligorov</p>
+            <section data-auto-animate>
+                <img src="PhD_images/Figures/2D_param_error.png"
+                    style="height: 500px; padding: 0px 10px 0px 10px; border-radius:0px">
+            </section>
+
+            <section data-auto-animate>
+                <img src="PhD_images/Figures/param2.png"
+                    style="height: 500px; padding: 0px 10px 0px 10px; border-radius:0px">
+            </section>
+
+            <section data-auto-animate>
+                <img src="PhD_images/Figures/param3.png"
+                    style="height: 500px; padding: 0px 10px 0px 10px; border-radius:0px">
+            </section>
+
+            <section data-auto-animate>
+                <img src="PhD_images/Figures/param4.png"
+                    style="height: 500px; padding: 0px 10px 0px 10px; border-radius:0px">
+            </section>
+
+            <section data-auto-animate>
+                <h4>Parametrisation Results</h4>
+                <img src="PhD_images/Figures/param_results.png"
+                    style="height: 500px; padding: 0px 0px 0px 0px; border-radius:0px">
+            </section>
+
+            <section data-auto-animate>
+                <h4>Selective Interpolation Optimisation</h4>
+                <div class="r-hstack">
+                    <img src="PhD_images/Figures/Strategy_table.png"
+                        style="width:1500px; padding: 0px 20px 0px 0px; border-radius:0px">
+                    <ul style="font-size:30px; padding:10px; line-height:140%;">
+                        <li>Determine which dimensions must be interpolated for each bin</li>
+                        <li>Select most efficient interpolation strategy for a given point</li>
+                        <li>Generate bespoke interpolation function at runtime</li>
+
+                    </ul>
+                </div>
+            </section>
+
+            <section data-auto-animate>
+                <h4>25% Error Threshold</h4>
+                <img src="PhD_images/Figures/SelectiveInterpTest_results_25.png"
+                    style="height: 500px; padding: 0px 10px 0px 10px; border-radius:0px">
+            </section>
+
+            <section data-auto-animate>
+                <h4>25% Error Threshold</h4>
+                <img src="PhD_images/Figures/SelectiveInterpTest_results_25-1.png"
+                    style="height: 500px; padding: 0px 10px 0px 10px; border-radius:0px">
+            </section>
+
+            <section data-auto-animate>
+                <h4>5% Error Threshold</h4>
+                <img src="PhD_images/Figures/SelectiveInterpTest_results_5.png"
+                    style="height: 500px; padding: 0px 10px 0px 10px; border-radius:0px">
+            </section>
+
+            <section data-auto-animate>
+                <h4>5% Error Threshold</h4>
+                <img src="PhD_images/Figures/SelectiveInterpTest_results_5-1.png"
+                    style="height: 500px; padding: 0px 10px 0px 10px; border-radius:0px">
+            </section>
+
+            <section data-auto-animate>
+                <h4>Momentum Reconstruction</h4>
+                <img src="PhD_images/Figures/plot_momentum_compare.png"
+                    style="height: 500px; padding: 0px 10px 0px 10px; border-radius:0px">
+            </section>
+
+            <section data-auto-animate>
+                <h4>Final Results</h4>
+                <img src="PhD_images/Figures/select_results.png" style="padding: 0px 10px 0px 10px; border-radius:0px">
+                <p style="font-size: 30px; padding: 10px 0px 0px 0px;">10% speed-up with 2% additional error</p>
             </section>
 
             <section>
-                <h3>Project Goals</h3>
+                <h4>Next Steps</h4>
                 <div class="r-hstack">
                     <figure>
                         <img src="PhD_images/cavern.jpg"
@@ -483,8 +297,7 @@
                     <ul style="font-size: 25px; padding: 10px; line-height: 140%;">
                         <li><b>Optimise reconstruction</b> with machine learning before calibration phase</li>
                         <li><b>Construction</b> shifts, installation and qualification of
-                            <b>timing
-                                system</b>
+                            <b>timing system</b>
                         </li>
                         <li>Generate simulation samples and procedure for <b>data validation</b></li>
                         <li>Phenomenological studies preparing for <b>CPV</b> data analysis</li>
@@ -493,53 +306,17 @@
             </section>
 
             <section>
-                <h3>Summary</h3>
-                <div class="r-vstack">
-                    <ul style="font-size: 25px; padding: 0px; line-height: 140%;">
-                        <li>Hyper-Kamiokande needs physicists who can <b>solve computational
-                                problems</b> in
-                            experiment and phenomenology, in which I am experienced</li>
-                        <li>Reconstruction optimisation is <b>time-sensitive</b> - must be
-                            completed
-                            before calibration in 2027 and will determine HyperK's <b>discovery potential</b></li>
+                <h4>Summary</h4>
+                <div class="r-hstack">
+                    <img src="PhD_images/event.jpg" style="height: 600px; padding: 20px; border-radius:10px;">
+                    <ul style="font-size: 25px; padding: 0px; line-height: 150%;">
+                        <li>Developed three optimisation methods for the scattering table interpolation</li>
+                        <li>Selective interpolation provides good efficiency-accuracy trade-off</li>
+                        <li>Machine learning techniques may produce greater efficiency improvements</li>
+                        <li>Even 10% faster reconstruction = 10% more calibration data = improved systematics for HyperK
                         </li>
                     </ul>
-                    <img src="PhD_images/Schedule.png" style="width: 600px; padding: 0px; border-radius:20px;">
-                    <ul style="font-size: 25px; padding: 0px; line-height: 140%;">
-                        <li>Fast reconstruction is the key to ensure <b>rapid confirmation of CPV</b> in neutrinos, a
-                            huge step in our understanding of the universe on a microscopic scale</li>
-                        </li>
                 </div>
-            </section>
-
-            <section>
-                <h3>Summary</h3>
-                <ul style="font-size: 30px; padding: 10px; line-height: 140%;">
-                    <li>
-                        <b>Honour's Thesis:</b> Atomic Ionisation with Electron Interactions of Dark
-                        Matter
-                        <ul style="font-size: 25px; padding: 15px 0px 40px 0px; line-height: 50%;">
-                            <li style="font-size: 25px;">Computational improvements for atomic ionisation factor</li>
-                        </ul>
-                    </li>
-                    <li><b>Postgraduate Research Assistant:</b> The Neutrino Fog for Dark Matter Electron Scattering
-                        Experiments</li>
-                    <ul style="font-size: 25px; padding: 15px 0px 40px 0px; line-height: 50%;">
-                        <li style="font-size: 25px;">Calculation of neutrino fog for electron-interacting dark matter
-                        </li>
-                    </ul>
-                    <li><b>Master's Thesis: </b>Optimising HyperK Event Reconstruction</li>
-                    <ul style="font-size: 25px; padding: 15px 0px 40px 0px; line-height: 50%;">
-                        <li style="font-size: 25px;">Physics-motivated optimisations to scattered light computation</li>
-                    </ul>
-                    <li><b>Doctoral Thesis? </b>Event Reconstruction and Phenomenological Analysis of HyperK
-                    </li>
-                    <ul style="font-size: 25px; padding: 15px 0px 40px 0px; line-height: 50%;">
-                        <li style="font-size: 25px;">Improve reconstruction efficiency, robustness, and CPV
-                            discovery potential
-                        </li>
-                    </ul>
-                </ul>
             </section>
 
         </div>

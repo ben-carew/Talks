@@ -1,0 +1,209 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, 
+                                         initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>IMAPP Thesis Defense</title>
+    <meta name="author" content="Ben Carew">
+
+    <link rel="stylesheet" href="dist/reset.css">
+    <link rel="stylesheet" href="dist/reveal.css">
+    <link rel="stylesheet" href="dist/theme/serif.css">
+    <link rel="stylesheet" href="plugin/highlight/monokai.css">
+    <style>
+        .flex-container {
+            display: flex;
+            flex-direction: row;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+
+            <section>
+                <h3>Event Reconstruction of the Hyper-Kamiokande Detector</h3>
+                <img src="PhD_images/LPNHE.jpg" style="height: 100px; padding: 20px; border-radius:40px;">
+                <img src="PhD_images/HyperK.png" style="height: 100px; padding: 20px; border-radius:40px;">
+                <p style="font-size: 30px; padding: 10px;">Supervisors: Dr Vladimir Gligorov and Dr Mathieu Gigue</p>
+            </section>
+
+            <section>
+                <h3>Hyper-Kamiokande</h3>
+                <div class="r-hstack">
+                    <figure>
+                        <img src="PhD_images/hyperk.jpg"
+                            style="width: 800px; padding: 0px 10px 0px 0px; border-radius:20px;">
+                        <figcaption style="font-size: 15pt;">SuperK, the predecessor of HyperK</figcaption>
+                    </figure>
+                    <ul style="font-size:30px; padding:10px; line-height:140%;">
+                        <li>Largest water Cherenkov detector</li>
+                        <li>20,000 PMTs with charge and time data</li>
+                        <li>Will have leading sensitivity to lepton sector CPV</li>
+                        <li>Will also study astrophysical and atmospheric neutrinos, accelerator neutrinos and proton
+                            decay</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <h3>Motivation</h3>
+                <div class="r-vstack">
+                    <div class="r-hstack">
+                        <ul style="font-size:30px; padding:10px; line-height:120%;">
+                            <li>Event reconstruction needs to be <b>efficient</b> and <b>robust</b>
+                                <ul style="font-size:25px; padding: 15px 0px 20px 0px; line-height: 100%;">
+                                    <li>Unexpected deviations from simulated data and backgrounds</li>
+                                    <li>Malfunctions and unpredictable detector behaviour</li>
+                                </ul>
+                            </li>
+                            <li>Many potential benefits from <b>machine learning</b> incorporation</li>
+                            <li>Faster reconstruction means <b>more accurate physics</b></li>
+                        </ul>
+                        <img src="PhD_images/event.jpg"
+                            style="width: 700px; padding: 0px 0px 0px 30px; border-radius:0px">
+                    </div>
+                    <img src="PhD_images/flow.svg" style="height: 100px; padding: 20px; border-radius:0px;">
+                </div>
+            </section>
+
+            <section>
+                <h3>Scattered Light Table</h3>
+                <div class="r-vstack">
+                    <div data-id="A" style="font-size:40px">
+                        \[A(\textcolor{orange}{s}) = A(\textcolor{blue}{x_{\text{PMT}}, z_{{vtx}}, R_{{vtx}}, \varphi,
+                        \theta, \phi}) =
+                        \frac{\mathrm{d}\textcolor{green}{\mu}^{\text{sct}}}{\mathrm{d}\textcolor{green}{\mu}^{\text{iso,sct}}}\]
+                    </div>
+                    <div class="r-hstack">
+                        <ul style="font-size:30px">
+                            <li>Accounts for <font color='green'>predicted charge</font> from light scattered in water
+                                and reflected</li>
+                            <li>Table requires computationally taxing <font color='blue'>6D</font> interpolation at each
+                                point \(\textcolor{orange}{s}\) along the
+                                track - ~35% of total runtime</li>
+                            <li>Optimisable by studying the physics behind the table's structure
+                            </li>
+                        </ul>
+                        <img src="PhD_images/6D diagram.png"
+                            style="width: 800px; padding: 0px 0px 0px 50px; border-radius:0px">
+                    </div>
+                </div>
+            </section>
+
+            <section data-auto-animate>
+                <h3>Approach 1: Gradient Threshold</h3>
+                <img src="PhD_images/2D_gradient.png" style="height: 500px">
+            </section>
+
+            <section data-auto-animate>
+                <section data-auto-animate>
+                    <h3>Approach 1: Gradient Threshold</h3>
+                    <img src="PhD_images/grad_time.png"
+                        style="height: 500px; padding: 0px 0px 0px 0px; border-radius:0px">
+                </section>
+                <section>
+                    <img src="PhD_images/grad_p_error.png" style=" padding: 0px 0px 0px 0px; border-radius:0px">
+                </section>
+                <section>
+                    <img src="PhD_images/grad_NNperc.png" style="padding: 0px 0px 0px 0px; border-radius:0px">
+                </section>
+            </section>
+
+            <section data-auto-animate>
+                <h3>Approach 2: Parametrisation</h3>
+                <div class="r-hstack">
+                    <img src="PhD_images/parametrisation.png"
+                        style="width:1500px; padding: 0px 20px 0px 0px; border-radius:0px">
+                    <ul style="font-size:30px; padding:10px; line-height:140%;">
+                        <li>Regions of the scattering table can be well-fit by analytical functions</li>
+                        <li>Use physically-motivated relationships between dimensions to reduce interpolation complexity
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section data-auto-animate>
+                <h3>Approach 2: Parametrisation</h3>
+                <img src="PhD_images/1DNN.png" style="height: 500px; padding: 0px 10px 0px 0px; border-radius:0px">
+            </section>
+
+            <section data-auto-animate>
+                <h3>Approach 2: Parametrisation</h3>
+                <img src="PhD_images/correction.png"
+                    style="height: 500px; padding: 0px 10px 0px 10px; border-radius:0px">
+            </section>
+
+            <section data-auto-animate>
+                <h3>Approach 2: Parametrisation</h3>
+                <img src="PhD_images/corrected.png"
+                    style="height: 500px; padding: 0px 10px 0px 10px; border-radius:0px">
+            </section>
+
+            <section>
+                <h3>Phenomenology</h3>
+                <img src="PhD_images/unitarity.png" style="height: 500px; padding: 0px 0px 0px 0px; border-radius:0px">
+            </section>
+
+            <section>
+                <h3>Phenomenology</h3>
+                <img src="PhD_images/jarlskog.png" style="height: 500px; padding: 0px 0px 0px 0px; border-radius:0px">
+            </section>
+
+            <section>
+                <h3>Summary</h3>
+                <ul style="font-size: 30px; padding: 10px; line-height: 140%;">
+                    <li>
+                        <b>Honour's Thesis:</b> Atomic Ionisation with Electron Interactions of Dark
+                        Matter
+                        <ul style="font-size: 25px; padding: 15px 0px 40px 0px; line-height: 50%;">
+                            <li style="font-size: 25px;">Computational improvements for atomic ionisation factor</li>
+                        </ul>
+                    </li>
+                    <li><b>Postgraduate Research Assistant:</b> The Neutrino Fog for Dark Matter Electron Scattering
+                        Experiments</li>
+                    <ul style="font-size: 25px; padding: 15px 0px 40px 0px; line-height: 50%;">
+                        <li style="font-size: 25px;">Calculation of neutrino fog for electron-interacting dark matter
+                        </li>
+                    </ul>
+                    <li><b>Master's Thesis: </b>Optimising HyperK Event Reconstruction</li>
+                    <ul style="font-size: 25px; padding: 15px 0px 40px 0px; line-height: 50%;">
+                        <li style="font-size: 25px;">Parametrise the scattering light table to reduce
+                            interpolation cost</li>
+                    </ul>
+                    <li><b>Doctoral Thesis? </b>Event Reconstruction and Phenomenological Analysis of NUCELUS
+                    </li>
+                    <ul style="font-size: 25px; padding: 15px 0px 40px 0px; line-height: 50%;">
+                        <li style="font-size: 25px;">Improve reconstruction efficiency, robustness, and CPV
+                            discovery potential
+                        </li>
+                    </ul>
+                </ul>
+            </section>
+
+        </div>
+    </div>
+
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script src="plugin/math/math.js"></script>
+    <script>
+        Reveal.initialize({
+            hash: true,
+            plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX],
+            transition: 'slide',
+            controls: false,
+            progress: true,
+            slideNumber: true
+        });
+    </script>
+</body>
+
+</html>
